@@ -1,0 +1,30 @@
+// === Mixins [ Шаблоны классов стилей, используемых на всех страницах ]===
+
+html, body {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+
+    @media ($media_xl) {
+        font-size: 14px;
+    }
+}
+
+.btn_primary {
+    background-image: linear-gradient(104deg, #fd3eff, #55aefd);
+    border: none;
+    border-radius: 0.5rem;
+    color: $color_white;
+    cursor: pointer;
+}
+
+.section_title {
+    font-family: 'HeliosBlackC', sans-serif;
+    font-size: 2rem;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+// === / Mixins ===

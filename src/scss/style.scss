@@ -1,0 +1,461 @@
+@import "./lib/normalize";
+@import "./lib/colors";
+@import "./lib/grid";
+@import "./lib/fonts";
+@import "./lib/lightslider";
+@import "./lib/animate";
+@import "./lib/mixins";
+@import "./lib/burger";
+
+@import "header";
+@import "footer";
+@import "faq";
+
+// === main ===
+
+.section-main {
+    min-height: 100vh;
+    background-image: url(../img/main_bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    .section-inner {
+    
+    }
+    
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .mb {
+            margin-bottom: 1.5rem;
+        }
+
+        &-logo {
+
+        }
+
+        &-title {
+            font-family: 'HeliosBlackC', sans-serif;
+            color: $color_white;
+            text-align: center;
+            font-weight: normal;
+            font-size: 2.8rem;
+        }
+
+        &-apps {
+
+            &.mb {
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                display: inline-flex;
+
+                &:first-child {
+                    margin-right: 0.7rem;
+                }
+            }
+
+
+            img {
+                width: 11rem;
+            }
+        }
+
+        &-button {
+            display: flex;
+            
+            a {
+                font-size: 1.5rem;
+                padding: 1rem 1.5rem;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+// === / main ===
+
+// === cars ===
+
+.section-cars {
+    margin-top: 7rem;
+
+    .section-inner {
+    
+    }
+    
+    .cars {
+
+        &-header {
+            text-align: center;
+
+            p {
+                font-size: 1.4rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem 0;
+
+            &-descr {
+                flex-basis: 35%;
+
+                &-title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                &-text {
+                    margin: 1rem 0;
+                }
+
+                &-cost {
+                    display: flex;
+
+                    &-block {
+
+                        h4, p {
+                            font-size: 0.8rem;
+                        }
+
+                        h4 {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+
+                &-btn {
+                    display: flex;
+                    margin-top: 1.5rem;
+                    
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 1.2rem 4rem;
+                    }
+                }
+            }
+
+            &-preview {
+                flex-basis: 60%;
+                height: 20rem;
+                display: flex;
+                align-items: center;
+
+                img {
+                    transition: 0.3s ease-in-out;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &-slider {
+            display: flex;
+
+            &-container {
+                display: flex;
+                justify-content: center;
+
+                &-item {
+                    cursor: pointer;
+                    border-radius: 0.5rem;
+                    padding: 1rem 2rem;
+                    transition: 0.3s ease-in-out;
+                    height: 8.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    p {
+                        color: $color_slider_item;
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        background-color: rgba(232, 232, 232, 0.64);
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
+
+// === / cars ===
+
+// === tariffs ===
+
+.section-tariffs {
+    margin: 7.5rem 0;
+
+    .section-inner {
+    
+    }
+    
+    .tariffs {
+
+        &-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        &-slider {
+            display: flex;
+            min-height: 24rem;
+
+            &-item {
+
+                .card {
+                    box-shadow: 0 0 20px 0 rgba(204, 204, 204, 0.58);
+                    border-radius: 0.8rem;
+                    margin: 1rem;
+
+                    &-header {
+                        background-image: linear-gradient(105deg, #fd3eff 1%, #55aefd);
+                        padding: 1.75rem 4rem;
+                        border-radius: 0.8rem 0.8rem 0 0;
+
+                        h3 {
+                            font-size: 1.125rem;
+                            font-weight: bold;
+                            color: $color_white;
+                            text-align: center;
+                        }
+                    }
+
+                    &-content {
+                        padding: 1.8rem;
+
+                        &-item {
+                            font-size: 0.8rem;
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: 2rem;
+                                object-fit: scale-down;
+                                margin-right: 0.5rem;
+                            }
+
+                            &:not(:last-child) {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+
+                    &-button {
+                        text-align: center;
+                        padding-bottom: 2rem;
+
+                        a {
+                            display: inline-flex;
+                            padding: 0.8rem 1.8rem;
+                            text-decoration: none;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .lSPager {
+            display: block;
+        }
+    }
+    
+}
+
+// === / tariffs ===
+
+// === start ===
+
+.section-start {
+    background: $color_start_bg;
+    padding: 7rem 0;
+
+    .section-inner {
+    
+    }
+    
+    .start {
+        &-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-preview {
+                flex-basis: 55%;
+
+                img {
+                    min-width: 100%;
+                }
+            }
+
+            &-steps {
+                flex-basis: 35%;
+
+                &-step {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    h3 {
+                        font-size: 1.25rem;
+                        margin-left: 2rem;
+                    }
+
+                    img {
+                        width: 3rem;
+                        object-fit: scale-down;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 3rem;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 1rem;
+                            height: 2.2rem;
+                            background-image: url(../img/start_arrow_down.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            bottom: 0;
+                            left: 0;
+                            transform: translate(100%, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// === / start ===
+
+// === advantages ===
+
+.section-advantages {
+    padding: 7rem 0;
+
+    .section-inner {
+    
+    }
+    
+    .advantages {
+        &-header {
+            margin-bottom: 5.5rem;
+            text-align: center;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-around;
+
+
+            &-card {
+                flex-basis: 20%;
+                text-align: center;
+
+                img {
+                    height: 3.75rem;
+                }
+
+                h3 {
+                    font-size: 1.25rem;
+                    margin: 1rem 0;
+                }
+
+                p {
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+    
+}
+
+// === / advantages ===
+
+// === zone ===
+
+.section-zone {
+    padding-bottom: 7.5rem;
+
+    .section-inner {
+    
+    }
+    
+    .zone {
+        &-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        &-content {
+            border-radius: 0.4rem;
+            box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2.5rem 5rem; 
+            justify-content: space-between;
+            align-items: center;
+
+            &-items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2rem;
+
+                &-item {
+                    width: 12.8rem;
+                    height: 2.5rem;
+                    font-size: 1rem;
+                    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.11);
+                    border-radius: 0.4rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &-map {
+                height: 13rem;
+
+                img {
+                    min-height: 100%;
+                }
+            }
+        }
+    }
+    
+}
+
+// === / zone ===
