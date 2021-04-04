@@ -930,6 +930,10 @@ button {
   margin-top: -2rem;
 }
 
+.lSAction > a:hover {
+  background-color: #fafafa;
+}
+
 .lSPager {
   display: none;
 }
@@ -1269,6 +1273,15 @@ body {
   border-radius: 0.5rem;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.btn_primary:hover {
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .section_title {
@@ -1371,7 +1384,7 @@ body {
 .section-header {
   position: absolute;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -1415,6 +1428,24 @@ body {
   padding: 0.5rem 0;
 }
 
+.section-header .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.section-header .header .logo strong {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-family: 'HeliosBlackC', sans-serif;
+  font-size: 1rem;
+  color: #2f617a;
+}
+
 .section-header .header .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1430,6 +1461,7 @@ body {
   color: #fff;
   padding: 0.5rem 0;
   position: relative;
+  cursor: pointer;
 }
 
 .section-header .header .menu-list-item a::after {
@@ -1763,8 +1795,8 @@ body {
 }
 
 .section-main .main-button a {
-  font-size: 1.5rem;
-  padding: 1rem 1.5rem;
+  font-size: 1.45rem;
+  padding: 0.9rem 1.5rem;
   text-decoration: none;
 }
 
@@ -1795,8 +1827,8 @@ body {
 }
 
 .section-cars .cars-info-descr {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
 }
 
 .section-cars .cars-info-descr-title {
@@ -1804,14 +1836,11 @@ body {
   font-weight: bold;
 }
 
-.section-cars .cars-info-descr-text {
-  margin: 1rem 0;
-}
-
 .section-cars .cars-info-descr-cost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1.5rem 0;
 }
 
 .section-cars .cars-info-descr-cost-block h4,
@@ -1822,10 +1851,15 @@ body {
 .section-cars .cars-info-descr-cost-block h4 {
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 
 .section-cars .cars-info-descr-cost-block:not(:last-child) {
   margin-right: 1rem;
+}
+
+.section-cars .cars-info-descr-text {
+  line-height: 1.6;
 }
 
 .section-cars .cars-info-descr-btn {
@@ -1839,11 +1873,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.2rem 4rem;
+  font-weight: bold;
 }
 
 .section-cars .cars-info-preview {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1851,6 +1886,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: -2rem;
 }
 
 .section-cars .cars-info-preview img {
@@ -1882,7 +1918,7 @@ body {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  height: 8.5rem;
+  height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1901,7 +1937,8 @@ body {
   text-align: center;
 }
 
-.section-cars .cars-slider-container-item:hover {
+.section-cars .cars-slider-container-item:hover,
+.section-cars .cars-slider-container-item.active {
   background-color: rgba(232, 232, 232, 0.64);
 }
 
@@ -1931,7 +1968,7 @@ body {
 .section-tariffs .tariffs-slider-item .card-header {
   background-image: -o-linear-gradient(345deg, #fd3eff 1%, #55aefd);
   background-image: linear-gradient(105deg, #fd3eff 1%, #55aefd);
-  padding: 1.75rem 4rem;
+  padding: 1.75rem 0;
   border-radius: 0.8rem 0.8rem 0 0;
 }
 
@@ -1976,7 +2013,7 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0.8rem 1.8rem;
+  padding: 0.9rem 3.2rem;
   text-decoration: none;
   font-size: 0.8rem;
 }
@@ -2153,7 +2190,7 @@ body {
 }
 
 .section-zone .zone-content-map img {
-  min-height: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 1550px) {
@@ -2196,6 +2233,126 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .section-header {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .section-header .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-header .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .section-header .header .menu {
+    width: 100%;
+  }
+
+  .section-header .header .menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .section-header .header .menu-list-item:not(:last-child) {
+    margin: 0 0 2rem 0;
+  }
+
+  .section-footer .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-footer .footer .column:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .section-footer .footer-social-app {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-cars .cars-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-cars .cars-info-preview {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 0;
+  }
+
+  .section-cars .cars-slider-container-item img {
+    max-width: 100%;
+  }
+
+  .section-start .start-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-start .start-content-preview {
+    margin-bottom: 2rem;
+  }
+
+  .section-start .start-content-preview img {
+    max-width: 100%;
+  }
+
+  .section-advantages .advantages-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-advantages .advantages-content-card:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .section-zone .zone-content {
+    padding: 2.5rem 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-zone .zone-content-items {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .section-zone .zone-content-map {
+    height: auto;
+  }
+
+  .section-zone .zone-content-map img {
+    max-width: 100%;
   }
 }
 

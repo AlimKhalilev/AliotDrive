@@ -75,8 +75,16 @@ $(document).ready(function() {
 
 $(".cars-slider-container").click(function(e) {
     let id = e.currentTarget.dataset.id;
+    let elem = $(this).children(":first");
+    elem.toggleClass("active");
+
     if (id !== start_id) {
+        let nodeList = document.querySelectorAll(".cars-slider-container-item");
+        nodeList[start_id-1].classList.remove("active");
+
         start_id = id;
+        nodeList[start_id-1].classList.add("active");
+
         let img = document.querySelector(".cars-info-preview img");
         img.classList.add("invisible");
         
@@ -111,7 +119,7 @@ $(".cars-slider-container").click(function(e) {
         {
             breakpoint: 578,
             settings: {
-                item: 1,
+                item:2,
                 slideMove: 1
               }
         }
@@ -153,24 +161,34 @@ $(".cars-slider-container").click(function(e) {
         }
     });
 
- 
+    if (isMainPage) {
+        $(".to-start").click(function(e) {
+            document.querySelector(".section-start").scrollIntoView({ behavior: 'smooth' })
+            e.preventDefault();
+        })
+    
+        $(".to-tariffs").click(function(e) {
+            document.querySelector(".section-tariffs").scrollIntoView({ behavior: 'smooth' })
+            e.preventDefault();
+        })
+    }
 
     // КОД ДЛЯ БУРГЕР МЕНЮ
     
-    // let button_burger = $(".burger");
-    // let menu_burger = $(".header-menu");
-    // let body = $("body");
+    let button_burger = $(".burger");
+    let menu_burger = $(".header-menu");
+    let body = $("body");
 
-    // $(button_burger).click(function () {
-    //     if (!menu_burger.is(':visible')) {
-    //         menu_burger.slideDown('normal');
-    //         body.css("overflow-y", "hidden");
-    //     } 
-    //     else {
-    //         menu_burger.slideUp('normal');
-    //         body.css("overflow-y", "");
-    //     }
-    // });
+    $(button_burger).click(function () {
+        if (!menu_burger.is(':visible')) {
+            menu_burger.slideDown('normal');
+            body.css("overflow-y", "hidden");
+        } 
+        else {
+            menu_burger.slideUp('normal');
+            body.css("overflow-y", "");
+        }
+    });
 
     /* 
     

@@ -16,7 +16,7 @@ $('.cars-slider').lightSlider({
         {
             breakpoint: 578,
             settings: {
-                item: 1,
+                item:2,
                 slideMove: 1
               }
         }

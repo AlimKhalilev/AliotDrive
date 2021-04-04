@@ -16,6 +16,13 @@ html, body {
     border-radius: 0.5rem;
     color: $color_white;
     cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        //box-shadow: 0 0 20px 0 rgba(204, 204, 204, 0.58);
+        transform: scale(1.01);
+    }
 }
 
 .section_title {

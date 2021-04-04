@@ -425,6 +425,10 @@
     background-position: center;
 
     margin-top: -2rem;
+
+    &:hover {
+        background-color: rgb(250, 250, 250);
+    }
 }
 
 .lSPager {
