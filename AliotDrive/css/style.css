@@ -1384,7 +1384,7 @@ body {
 .section-header {
   position: absolute;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -1408,6 +1408,10 @@ body {
 
 .section-header.fixed .header .menu-list-item a::after {
   background-color: #000000;
+}
+
+.section-header.fixed .header .logo strong {
+  color: #2f617a;
 }
 
 .section-header h1 {
@@ -1438,12 +1442,20 @@ body {
   text-decoration: none;
 }
 
+.section-header .header .logo picture {
+  width: 3.2rem;
+}
+
+.section-header .header .logo picture img {
+  max-width: 100%;
+}
+
 .section-header .header .logo strong {
   display: inline-block;
   margin-left: 0.5rem;
   font-family: 'HeliosBlackC', sans-serif;
   font-size: 1rem;
-  color: #2f617a;
+  color: #fff;
 }
 
 .section-header .header .menu-list {
@@ -1730,7 +1742,7 @@ body {
 
 .section-main {
   min-height: 100vh;
-  background-image: url(../img/main_bg.webp);
+  background-image: url(../img/main_bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1760,6 +1772,14 @@ body {
 
 .section-main .main .mb {
   margin-bottom: 1.5rem;
+}
+
+.section-main .main-logo {
+  width: 9.5rem;
+}
+
+.section-main .main-logo img {
+  max-width: 100%;
 }
 
 .section-main .main-title {
@@ -1894,6 +1914,7 @@ body {
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .section-cars .cars-slider {
@@ -1931,6 +1952,11 @@ body {
           justify-content: space-between;
 }
 
+.section-cars .cars-slider-container-item img {
+  max-width: 100%;
+  height: auto;
+}
+
 .section-cars .cars-slider-container-item p {
   color: #2b454e;
   font-size: 0.8rem;
@@ -1943,7 +1969,7 @@ body {
 }
 
 .section-tariffs {
-  margin: 7.5rem 0;
+  padding: 7.5rem 0;
 }
 
 .section-tariffs .tariffs-header {
@@ -2302,10 +2328,10 @@ body {
         -ms-flex-order: -1;
             order: -1;
     margin-right: 0;
-  }
-
-  .section-cars .cars-slider-container-item img {
-    max-width: 100%;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    height: 12rem;
   }
 
   .section-start .start-content {
@@ -2361,3 +2387,5 @@ body {
     width: 95%;
   }
 }
+
+.webp-support .section-main { background-image: url(../img/main_bg.webp); }
