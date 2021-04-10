@@ -99,8 +99,8 @@ function css() {
             })
         )
         .pipe(webpcss({
-            baseClass: ".webp-support"
-        }))
+            baseClass: ".webp-support" 
+        })) 
         .pipe(dest(path.build.css))
         .pipe(clean_css())
         .pipe(
@@ -116,7 +116,7 @@ function images() {
     return src(path.src.img)
         .pipe(
             webp({
-                quality: 100
+                quality: 95
             })
         )
         .pipe(dest(path.build.img))

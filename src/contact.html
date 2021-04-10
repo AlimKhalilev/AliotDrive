@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "Контакты - AliotDrive"
+		})
+
+	</head>
+	<body>
+
+		@@include("_header.html")
+
+        <section class="section-outer section-contact">
+            <div class="section-inner contact">
+                <div class="contact-header">
+                    <h1 class="section_title">Свяжитесь с нами</h1>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-block">
+                        <h2 class="title">Контактная информация</h2>
+                        <p class="number">Тех. поддержка: <a href="tel:+8 (800) 302-308-2">8 (800) 302-308-2</a></p>
+                        <p class="address">ООО «АЛИОТДРАЙВ» , Республика Крым,<br> г.Симферополь, пер.Элеваторный 10А</p>
+                        <div class="button">
+                            <button id="open_modal" class="btn_primary">Тех. поддержка</button>
+                        </div>
+                    </div>
+                    <div class="contact-info-block">
+                        <h2 class="title">По вопросам партнерства</h2>
+                        <p class="number">Коммерческий отдел: <a href="tel:+7(978)-577-72-97">+7(978)-577-72-97</a></p>
+                        <p class="address"> Равным образом, современная методология<br> разработки зависит</p>
+                        <div class="button">
+                            <button id="open_modal_dop" class="btn_primary">Стать партнёром</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6fb4f2ff16d90ad7ec0d8150810ade719b75894b3545a4126d9a4c673624fcd3&amp;width=100%25&amp;height=648&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="modal_form">
+            <div class="modal-header">
+                <h2 class="section_title">Заполните форму, и мы<br>свяжемся с вами</h2>
+            </div>
+            <div class="modal-close">
+                <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
+            </div>
+            <form class="modal-form">
+                <input class="item modal-form-text modal_input" type="text" placeholder="Имя" name="name">
+                <input class="item modal-form-tel modal_input number"  type="tel" placeholder="Телефон" name="tel">
+                <textarea class="item modal-form-question modal_input"  name="question" placeholder="Опишите ваш вопрос"></textarea>
+                <label class="item modal-form-personal">
+                    <input class="visually_hidden modal_input" type="checkbox">
+                    <span class="pseudo">
+                        <img src="./img/check.svg" alt="Галочка выбора">
+                    </span>
+                    <span class="text">Подтверждаю согласие на <a href="#">обработку персональных данных</a></span>
+                </label>
+                <div class="item modal-form-error">
+                    <img src="./img/error_icon.svg" alt="Иконка ошибки">
+                    <span>Заполните все поля!</span>
+                </div>
+                <div class="item modal-form-button">
+                    <button class="btn_primary" id="send_button">Отправить</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal" id="modal_success">
+            <div class="modal-header">
+                <h2 class="section_title">Заявка создана</h2>
+            </div>
+            <div class="modal-close">
+                <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-icon">
+                    <img src="./img/start_step_4.svg" alt="Иконка успеха">
+                </div>
+                <p class="modal-content-text">
+                    Заявка по вашему обращению была создана. 
+                    Мы ответим на ваш email в ближайшее время. 
+                    Если у вас срочный вопрос – свяжитесь 
+                    с нами по телефону.
+                </p>
+                <div class="modal-content-button">
+                    <button class="btn_primary modal-close-dop">Хорошо</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+		@@include("_footer.html")
+
+	</body>
+</html>

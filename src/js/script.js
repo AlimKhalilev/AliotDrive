@@ -29,6 +29,7 @@ $(document).ready(function() {
     --include("_slider-config.js");
     --include("_cars-slider.js");
     --include("_tariffs-slider.js");
+    --include("_modal.js")
 
     let faq_content = $(".faq-content-item");
 
@@ -43,15 +44,33 @@ $(document).ready(function() {
     });
 
     if (isMainPage) {
+        let zone_map_coords = [
+            [30, 10],
+            [20, 20],
+            [30, 30],
+            [40, 40],
+            [50, 50],
+            [60, 60]
+        ]
         $(".to-start").click(function(e) {
             document.querySelector(".section-start").scrollIntoView({ behavior: 'smooth' })
             e.preventDefault();
-        })
+        });
     
         $(".to-tariffs").click(function(e) {
             document.querySelector(".section-tariffs").scrollIntoView({ behavior: 'smooth' })
             e.preventDefault();
-        })
+        });
+
+        $(".zone-content-items-item").hover(function(e) {
+            let index = $(this).index();
+            $(".zone-content-map-location").css("top", `${zone_map_coords[index][0]}%`);
+            $(".zone-content-map-location").css("left", `${zone_map_coords[index][1]}%`);
+            console.log();
+        }, function(e) {
+            $(".zone-content-map-location").css("top", `-10%`);
+            $(".zone-content-map-location").css("top", `-10%`);
+        });
     }
 
     // КОД ДЛЯ БУРГЕР МЕНЮ
@@ -70,31 +89,5 @@ $(document).ready(function() {
             body.css("overflow-y", "");
         }
     });
-
-    /* 
-    
-    $("#open_modal").click(function() {
-        overlay.css("visibility", "visible");
-        overlay.css("opacity", "0.8");
-        body.css("overflow-y", "hidden");
-
-        if ($(window).width() <= '576') { // высота открытия модали на мобиле
-            $(".modal-form").css("top", "50px");
-        }
-        
-        if ($(window).width() > '576') { // высота открытия на экране больше 576
-            $(".modal-form").css("top", "120px");
-        }
-    });
-
-    $(".overlay").click(function() {
-
-        $(".modal-form").css("top", "");
-        body.css("overflow-y", "");
-        overlay.css("visibility", "");
-        overlay.css("opacity", "");
-    });
-
-    */
 
 });

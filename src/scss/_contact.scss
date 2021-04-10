@@ -1,0 +1,295 @@
+// === contact ===
+
+.section-contact {
+    padding: 5.5rem 0;
+
+    @media ($media_xs) {
+        padding: 3.5rem 0;
+    }
+
+    .section-inner {
+    
+    }
+    
+    .contact {
+        &-header {
+            text-align: center;
+        }
+
+        &-info {
+            margin: 5rem 0 4rem 0;
+            display: flex;
+            justify-content: space-around;
+
+            @media ($media_xs) {
+                flex-direction: column;
+                margin: 3rem 0;
+            }
+
+            &-block {
+                text-align: center;
+                line-height: 1.5;
+
+                @media ($media_xs) {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .title {
+                    text-transform: uppercase;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.25rem;
+
+                    @media ($media_xs) {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .number {
+                    a {
+                        text-decoration: none;
+                        color: $color_black_main;
+                    }
+                }
+
+                .address {
+                    margin: 0.8rem 0 1.2rem 0;
+                }
+
+                .button {
+
+                    button {
+                        padding: 1.2rem 1.9rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        &-map {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
+        }
+    }
+    
+}
+
+// === / contact ===
+
+// === modal ===
+
+.modal {
+    padding: 3.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
+    background-color: $color_white;
+    width: 34rem;
+
+    @media ($media_xs) {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    &-header {
+        text-align: center;
+        line-height: 1.27;
+        margin-bottom: 2.5rem;
+
+        @media ($media_xs) {
+            margin-bottom: 1.5rem;
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 2.8rem;
+        width: 2.8rem;
+        box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.16);
+        transform: translate(40%, -40%);
+        background-color: $color_white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.95rem;
+        cursor: pointer;
+
+        picture {
+            display: inline-flex;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+
+        input[type="text"], input[type="tel"], textarea {
+            padding: 1rem 1rem 1rem 3rem;
+            border-radius: 0.8rem;
+            box-shadow: 0 0.15rem 0.4rem 0 rgba(0, 0, 0, 0.16);
+            background-color: $color_white;
+            border: none;
+            resize: none;
+            outline: none;
+
+            background-repeat: no-repeat;
+            background-position: 1rem calc(1rem + 2px);
+
+            &::placeholder {
+                color: #c2c2c2
+            }
+
+            &.error {
+                border: solid 1px #ff7e7e;
+                background-color: #fff8f8;
+                background-image: url(../img/error_icon.svg);
+            }
+        }
+
+        textarea {
+            height: 7.8rem;
+        }
+
+        .item {
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-text {
+            background-image: url(../img/input_name.svg);
+
+            &:focus {
+                background-image: url(../img/input_name_focus.svg);
+            }
+        }
+
+        &-tel {
+            background-image: url(../img/input_tel.svg); 
+
+            &:focus {
+                background-image: url(../img/input_tel_focus.svg);
+            }
+        }
+
+        &-question {
+            background-image: url(../img/input_question.svg);
+
+            &:focus {
+                background-image: url(../img/input_question_focus.svg);
+            }
+        }
+
+        &-personal {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .pseudo {
+                display: inline-flex;
+                min-width: 1.375rem;
+                min-height: 1.375rem;
+                border-radius: 5px;
+                box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.16);
+                background-color: $color_white;
+                padding: 0.15rem;
+                margin-right: 1rem;
+
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    max-width: 100%;
+                    display: none;
+                }
+            }
+
+            input.error ~ .pseudo {
+                border: solid 1px #ff7e7e;
+                background-color: #fff8f8;
+            }
+
+            input:checked ~ .pseudo {
+
+                img {
+                    display: block;
+                }
+            }
+
+            .text {
+                font-size: 0.7rem;
+
+                a {
+                    color: $color_form_link;
+                    font-size: inherit;
+                }
+            }
+        }
+
+        &-error {
+            display: none;
+            align-items: center;
+
+            &.error {
+                display: flex;
+            }
+
+            span {
+                font-size: 0.8rem;
+                color: $color_error;
+                margin-left: 0.8rem;
+            }
+        }
+
+        &-button {
+            text-align: center;
+
+            button {
+                padding: 1.25rem 3.75rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 0.95rem;
+            }
+        }
+    }
+
+    &-content {
+        text-align: center;
+
+        &-icon {
+
+            img {
+                width: 6.5rem;
+                height: 6.5rem;
+            }
+        }
+
+        &-text {
+            line-height: 1.6;
+            margin: 1.5rem 0;
+        }
+
+        &-button {
+            button {
+                padding: 1.25rem 3.75rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+
+// === / modal ===
