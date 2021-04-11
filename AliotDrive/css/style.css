@@ -415,7 +415,7 @@ button {
 
 .section-inner {
   margin: 0 auto;
-  max-width: 1172px;
+  max-width: 1170px;
 }
 
 @font-face {
@@ -1361,7 +1361,7 @@ body {
 }
 
 .burger input:checked ~ span {
-  background-color: #222222;
+  background-color: #c2c2c2;
   width: 27px;
   margin: 0;
 }
@@ -1542,9 +1542,7 @@ body {
 }
 
 .section-footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(253, 62, 255, 0.9)), to(rgba(85, 174, 253, 0.9)));
-  background-image: -o-linear-gradient(left, rgba(253, 62, 255, 0.9) 0%, rgba(85, 174, 253, 0.9) 100%);
-  background-image: linear-gradient(to right, rgba(253, 62, 255, 0.9) 0%, rgba(85, 174, 253, 0.9) 100%);
+  background-color: #2b454e;
   padding: 3.8rem 0;
 }
 
@@ -1652,6 +1650,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.section-footer .footer-contacts-items-item picture {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .section-footer .footer-contacts-items-item img {
@@ -1886,6 +1890,22 @@ body {
           flex-direction: column;
 }
 
+.modal-form-container {
+  position: relative;
+}
+
+.modal-form-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  -webkit-transform: translate(120%, 120%);
+      -ms-transform: translate(120%, 120%);
+          transform: translate(120%, 120%);
+  fill: #c2c2c2;
+}
+
 .modal-form input[type="text"],
 .modal-form input[type="tel"],
 .modal-form textarea {
@@ -1897,8 +1917,7 @@ body {
   border: none;
   resize: none;
   outline: none;
-  background-repeat: no-repeat;
-  background-position: 1rem calc(1rem + 2px);
+  width: 100%;
 }
 
 .modal-form input[type="text"]::-webkit-input-placeholder, .modal-form input[type="tel"]::-webkit-input-placeholder, .modal-form textarea::-webkit-input-placeholder {
@@ -1923,12 +1942,26 @@ body {
   color: #c2c2c2;
 }
 
+.modal-form input[type="text"]:focus ~ svg,
+.modal-form input[type="tel"]:focus ~ svg,
+.modal-form textarea:focus ~ svg {
+  fill: #2b454e;
+}
+
 .modal-form input[type="text"].error,
 .modal-form input[type="tel"].error,
 .modal-form textarea.error {
   border: solid 1px #ff7e7e;
   background-color: #fff8f8;
   background-image: url(../img/error_icon.svg);
+  background-repeat: no-repeat;
+  background-position: 1rem 1rem;
+}
+
+.modal-form input[type="text"].error ~ svg,
+.modal-form input[type="tel"].error ~ svg,
+.modal-form textarea.error ~ svg {
+  display: none;
 }
 
 .modal-form textarea {
@@ -1937,30 +1970,6 @@ body {
 
 .modal-form .item:not(:last-child) {
   margin-bottom: 1.5rem;
-}
-
-.modal-form-text {
-  background-image: url(../img/input_name.svg);
-}
-
-.modal-form-text:focus {
-  background-image: url(../img/input_name_focus.svg);
-}
-
-.modal-form-tel {
-  background-image: url(../img/input_tel.svg);
-}
-
-.modal-form-tel:focus {
-  background-image: url(../img/input_tel_focus.svg);
-}
-
-.modal-form-question {
-  background-image: url(../img/input_question.svg);
-}
-
-.modal-form-question:focus {
-  background-image: url(../img/input_question_focus.svg);
 }
 
 .modal-form-personal {
@@ -2295,6 +2304,14 @@ body {
   background-color: rgba(232, 232, 232, 0.64);
 }
 
+.section-cars .cars .lSPager {
+  display: block;
+}
+
+.section-cars .cars .lSAction > a {
+  top: 40%;
+}
+
 .section-tariffs {
   padding: 7.5rem 0;
 }
@@ -2398,8 +2415,8 @@ body {
 }
 
 .section-start .start-content-preview {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 .section-start .start-content-preview img {
@@ -2474,8 +2491,20 @@ body {
   text-align: center;
 }
 
-.section-advantages .advantages-content-card img {
-  height: 3.75rem;
+.section-advantages .advantages-content-card picture {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+}
+
+.section-advantages .advantages-content-card picture img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .section-advantages .advantages-content-card h3 {
@@ -2590,8 +2619,17 @@ body {
     width: 90%;
   }
 
-  .lSAction {
-    display: none;
+  .lSAction > .lSPrev {
+    left: -3.4rem;
+  }
+
+  .lSAction > .lSNext {
+    right: -3.4rem;
+  }
+
+  html,
+  body {
+    font-size: 16px;
   }
 
   .burger-menu {
@@ -2602,10 +2640,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .section-header {
-    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .section-header .header {
@@ -2664,17 +2698,61 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 5rem 0 3rem 0;
+  }
+
+  .section-cars .cars-info-descr-relative {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-cars .cars-info-descr-relative .cars-info-descr-btn {
+    margin: 0 2rem 0 0;
   }
 
   .section-cars .cars-info-preview {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
     margin-right: 0;
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
-    height: 12rem;
+    height: 20rem;
+  }
+
+  .section-cars .cars-info-preview picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-cars .cars-slider-container-item {
+    width: 95%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .section-cars .cars .lSSlideOuter {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-tariffs .section-inner {
+    width: 80%;
+  }
+
+  .section-start {
+    background: #fff;
   }
 
   .section-start .start-content {
@@ -2688,19 +2766,31 @@ body {
     margin-bottom: 2rem;
   }
 
+  .section-advantages {
+    padding: 7rem 0 0 0;
+  }
+
+  .section-advantages {
+    padding: 3rem 0 7rem 0;
+  }
+
   .section-advantages .advantages-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-advantages .advantages-content-card {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 
   .section-advantages .advantages-content-card:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
 
   .section-zone .zone-content {
-    padding: 2.5rem 1.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2708,8 +2798,7 @@ body {
   }
 
   .section-zone .zone-content-items {
-    grid-template-columns: 1fr;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .section-zone .zone-content-map {
@@ -2724,6 +2813,25 @@ body {
 @media (max-width: 576px) {
   .section-inner {
     width: 95%;
+  }
+
+  .lSAction > a {
+    width: 2rem;
+    height: 2rem;
+    background-size: 50%;
+  }
+
+  .lSAction > .lSPrev {
+    left: -2rem;
+  }
+
+  .lSAction > .lSNext {
+    right: -2rem;
+  }
+
+  html,
+  body {
+    font-size: 13px;
   }
 
   .section-contact {
@@ -2757,6 +2865,65 @@ body {
 
   .modal-header h2 {
     font-size: 1.4rem;
+  }
+
+  .section-main .main-logo {
+    width: 8rem;
+  }
+
+  .section-main .main-title {
+    font-size: 2rem;
+  }
+
+  .section-main .main-apps img {
+    width: 10rem;
+  }
+
+  .section-cars .cars-info-descr-relative {
+    display: block;
+  }
+
+  .section-cars .cars-info-descr-relative .cars-info-descr-btn {
+    margin-top: 1.5rem;
+  }
+
+  .section-cars .cars-info-preview {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 12rem;
+  }
+
+  .section-cars .cars .lSSlideOuter {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-tariffs {
+    padding: 6rem 0;
+  }
+
+  .section-start {
+    padding: 5rem 0;
+  }
+
+  .section-advantages .advantages-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-advantages .advantages-content-card:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .section-zone .zone-content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .section-zone .zone-content-items {
+    grid-template-columns: 1fr;
   }
 }
 

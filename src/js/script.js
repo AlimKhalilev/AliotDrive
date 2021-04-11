@@ -7,6 +7,7 @@ let header = $(".section-header");
 let main_pane = $(".section-main");
 let isHeaderTop = true;
 let isMainPage = $("#main_page").length;
+let isContactPage = $("#contact_page").length;
 
 if (isMainPage) {
     window.addEventListener('scroll', function() {
@@ -29,7 +30,10 @@ $(document).ready(function() {
     --include("_slider-config.js");
     --include("_cars-slider.js");
     --include("_tariffs-slider.js");
-    --include("_modal.js")
+
+    if (isContactPage) {
+        --include("_modal.js");
+    }
 
     let faq_content = $(".faq-content-item");
 

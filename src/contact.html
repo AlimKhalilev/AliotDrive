@@ -7,7 +7,7 @@
 		})
 
 	</head>
-	<body>
+	<body id="contact_page">
 
 		@@include("_header.html")
 
@@ -48,9 +48,19 @@
                 <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
             </div>
             <form class="modal-form">
-                <input class="item modal-form-text modal_input" type="text" placeholder="Имя" name="name">
-                <input class="item modal-form-tel modal_input number"  type="tel" placeholder="Телефон" name="tel">
-                <textarea class="item modal-form-question modal_input"  name="question" placeholder="Опишите ваш вопрос"></textarea>
+                <div class="item modal-form-container">
+                    <input class="modal-form-text modal_input" type="text" placeholder="Имя" name="name">
+                    <svg><use xlink:href="img/main.svg#modal_user"></use></svg>
+                </div>
+                <div class="item modal-form-container">
+                    <input class="modal-form-tel modal_input number" type="tel" placeholder="Телефон" name="tel">
+                    <svg><use xlink:href="img/main.svg#modal_phone"></use></svg>
+                </div>
+                <div class="item modal-form-container">
+                    <textarea class="modal-form-question modal_input" name="question" placeholder="Опишите ваш вопрос"></textarea>
+                    <svg><use xlink:href="img/main.svg#modal_comment"></use></svg>
+                </div>
+                
                 <label class="item modal-form-personal">
                     <input class="visually_hidden modal_input" type="checkbox">
                     <span class="pseudo">

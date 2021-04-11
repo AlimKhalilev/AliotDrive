@@ -134,6 +134,20 @@
         display: flex;
         flex-direction: column;
 
+        &-container {
+            position: relative;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0.9rem;
+                height: 0.9rem;
+                transform: translate(120%, 120%);
+                fill: $color_svg_grey;
+            }
+        }
+
         input[type="text"], input[type="tel"], textarea {
             padding: 1rem 1rem 1rem 3rem;
             border-radius: 0.8rem;
@@ -142,18 +156,28 @@
             border: none;
             resize: none;
             outline: none;
-
-            background-repeat: no-repeat;
-            background-position: 1rem calc(1rem + 2px);
+            width: 100%;
 
             &::placeholder {
-                color: #c2c2c2
+                color: $color_svg_grey;
+            }
+
+            &:focus {
+                & ~ svg {
+                    fill: $color_black_main;
+                }
             }
 
             &.error {
-                border: solid 1px #ff7e7e;
-                background-color: #fff8f8;
+                border: solid 1px $color_error_form_border;
+                background-color: $color_error_form;
                 background-image: url(../img/error_icon.svg);
+                background-repeat: no-repeat;
+                background-position: 1rem 1rem;
+
+                & ~ svg {
+                    display: none;
+                }
             }
         }
 
@@ -165,30 +189,6 @@
 
             &:not(:last-child) {
                 margin-bottom: 1.5rem;
-            }
-        }
-
-        &-text {
-            background-image: url(../img/input_name.svg);
-
-            &:focus {
-                background-image: url(../img/input_name_focus.svg);
-            }
-        }
-
-        &-tel {
-            background-image: url(../img/input_tel.svg); 
-
-            &:focus {
-                background-image: url(../img/input_tel_focus.svg);
-            }
-        }
-
-        &-question {
-            background-image: url(../img/input_question.svg);
-
-            &:focus {
-                background-image: url(../img/input_question_focus.svg);
             }
         }
 
@@ -217,8 +217,8 @@
             }
 
             input.error ~ .pseudo {
-                border: solid 1px #ff7e7e;
-                background-color: #fff8f8;
+                border: solid 1px $color_error_form_border;
+                background-color: $color_error_form;
             }
 
             input:checked ~ .pseudo {

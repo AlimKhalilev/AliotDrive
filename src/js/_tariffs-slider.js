@@ -13,7 +13,14 @@ $('.tariffs-slider').lightSlider({
             }
         },
         {
-            breakpoint: 578,
+            breakpoint: 780,
+            settings: {
+                item: 2,
+                slideMove: 1
+              }
+        },
+        {
+            breakpoint: 580,
             settings: {
                 item: 1,
                 slideMove: 1

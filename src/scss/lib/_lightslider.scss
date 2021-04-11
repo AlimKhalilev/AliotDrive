@@ -396,11 +396,11 @@
 
 // ====================== CUSTOM =============================
 
-.lSAction {
-    @media ($media_sm) {
-        display: none;
-    }
-}
+// .lSAction {
+//     @media ($media_sm) {
+//         display: none;
+//     }
+// }
 
 .lSSlideOuter {
     position: relative;
@@ -426,6 +426,12 @@
 
     margin-top: -2rem;
 
+    @media ($media_xs) {
+        width: 2rem;
+        height: 2rem;
+        background-size: 50%;
+    }
+
     &:hover {
         background-color: rgb(250, 250, 250);
     }
@@ -442,10 +448,22 @@
 .lSAction>.lSPrev {
     transform: rotateY(180deg);
     left: -4.4rem;
+    @media ($media_sm) {
+        left: -3.4rem;
+    }
+    @media ($media_xs) {
+        left: -2rem;
+    }
 }
 
 .lSAction>.lSNext {
     right: -4.4rem;
+    @media ($media_sm) {
+        right: -3.4rem;
+    }
+    @media ($media_xs) {
+        right: -2rem;
+    }
 }
 
 .lSSlideOuter .lSPager.lSpg > li a {

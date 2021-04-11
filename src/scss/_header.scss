@@ -6,10 +6,6 @@
     background-color: $color_nav_bg;
     transition: 0.3s ease-in-out;
 
-    @media ($media_sm) {
-        background-color: rgba(0,0,0,.8);
-    }
-
     &.fixed {
         position: fixed;
         background-color: $color_white;

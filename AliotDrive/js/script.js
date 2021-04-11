@@ -43,6 +43,12 @@ let jsonData = [
         description: "Динамичный и лёгкий в управлении седан. Более приятные цены по сравнению.",
         drive_cost: "От 12 ₽/мин",
         wait_cost: "От 5 ₽/мин"
+    },
+    {
+        name: "Volkswagen Multivan T65",
+        description: "Динамичный и лёгкий в управлении седан. Более приятные цены по сравнению.",
+        drive_cost: "От 12 ₽/мин",
+        wait_cost: "От 5 ₽/мин"
     }
 ];
 
@@ -52,6 +58,7 @@ let header = $(".section-header");
 let main_pane = $(".section-main");
 let isHeaderTop = true;
 let isMainPage = $("#main_page").length;
+let isContactPage = $("#contact_page").length;
 
 if (isMainPage) {
     window.addEventListener('scroll', function() {
@@ -105,14 +112,14 @@ $(".cars-slider-container").click(function(e) {
     item:5,
     slideMove: 1,
     slideMargin: "",
-    controls: false,
+    controls: true,
     easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
     speed: 600,
     responsive : [
         {
-            breakpoint: 1000,
+            breakpoint: 780,
             settings: {
-                item:2,
+                item:3,
                 slideMove:1
               }
         },
@@ -140,7 +147,14 @@ $(".cars-slider-container").click(function(e) {
             }
         },
         {
-            breakpoint: 578,
+            breakpoint: 780,
+            settings: {
+                item: 2,
+                slideMove: 1
+              }
+        },
+        {
+            breakpoint: 580,
             settings: {
                 item: 1,
                 slideMove: 1
@@ -148,7 +162,9 @@ $(".cars-slider-container").click(function(e) {
         }
     ]
 });  ;
-    let overlay = $(".overlay");
+
+    if (isContactPage) {
+        let overlay = $(".overlay");
 
 let modal_type = null;
 let modal_form_content = [];
@@ -265,7 +281,8 @@ modal_form_save.addEventListener("click", (e) => {
     }
 
     e.preventDefault();
-});
+});;
+    }
 
     let faq_content = $(".faq-content-item");
 
