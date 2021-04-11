@@ -81,7 +81,7 @@
                 width: 11rem;
 
                 @media ($media_xs) {
-                    width: 10rem;
+                    width: 9rem;
                 }
             }
         }
@@ -93,6 +93,12 @@
                 font-size: 1.45rem;
                 padding: 0.9rem 1.5rem;
                 text-decoration: none;
+
+                @media ($media_xs) {
+                    font-size: 1.3rem;
+                    padding: 0.75rem 1.35rem;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -332,6 +338,10 @@
                     border-radius: 0.8rem;
                     margin: 1rem;
 
+                    @media ($media_xs) {
+                        margin: 1.2rem;
+                    }
+
                     &-header {
                         background-image: linear-gradient(105deg, #fd3eff 1%, #55aefd);
                         padding: 1.75rem 0;
@@ -348,10 +358,18 @@
                     &-content {
                         padding: 1.8rem;
 
+                        @media ($media_xs) {
+                            padding: 1.8rem 1.5rem;
+                        }
+
                         &-item {
                             font-size: 0.8rem;
                             display: flex;
                             align-items: center;
+
+                            @media ($media_xs) {
+                                justify-content: center;
+                            }
 
                             img {
                                 width: 2rem;

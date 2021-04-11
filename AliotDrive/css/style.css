@@ -2822,16 +2822,16 @@ body {
   }
 
   .lSAction > .lSPrev {
-    left: -2rem;
+    left: -2.2rem;
   }
 
   .lSAction > .lSNext {
-    right: -2rem;
+    right: -2.2rem;
   }
 
   html,
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .section-contact {
@@ -2876,7 +2876,13 @@ body {
   }
 
   .section-main .main-apps img {
-    width: 10rem;
+    width: 9rem;
+  }
+
+  .section-main .main-button a {
+    font-size: 1.3rem;
+    padding: 0.75rem 1.35rem;
+    text-decoration: none;
   }
 
   .section-cars .cars-info-descr-relative {
@@ -2901,6 +2907,20 @@ body {
 
   .section-tariffs {
     padding: 6rem 0;
+  }
+
+  .section-tariffs .tariffs-slider-item .card {
+    margin: 1.2rem;
+  }
+
+  .section-tariffs .tariffs-slider-item .card-content {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .section-tariffs .tariffs-slider-item .card-content-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .section-start {
