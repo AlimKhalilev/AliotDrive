@@ -9,6 +9,31 @@ let isHeaderTop = true;
 let isMainPage = $("#main_page").length;
 let isContactPage = $("#contact_page").length;
 
+function showModal(name) {
+    overlay.css("visibility", "visible");
+    overlay.css("opacity", "0.8");
+    body.css("overflow-y", "hidden");
+
+    if ($(window).width() <= '576') { // высота открытия модали на мобиле
+        $(name).css("top", "50px");
+    }
+    
+    if ($(window).width() > '576') { // высота открытия на экране больше 576
+        $(name).css("top", "120px");
+    }
+}
+
+function closeModals() {
+    $(".modal").css("top", "");
+    body.css("overflow-y", "");
+    overlay.css("visibility", "");
+    overlay.css("opacity", "");
+}
+
+$(".overlay, .modal-close, .modal-close-dop").click(function() {
+    closeModals();
+});
+
 if (isMainPage) {
     window.addEventListener('scroll', function() {
         if (pageYOffset >= main_pane.outerHeight() && isHeaderTop) {
@@ -22,7 +47,7 @@ if (isMainPage) {
     });
 }
 else {
-    header.addClass("fixed static");
+    header.addClass("static");
 }
 
 $(document).ready(function() {
@@ -48,14 +73,19 @@ $(document).ready(function() {
     });
 
     if (isMainPage) {
-        let zone_map_coords = [
-            [30, 10],
-            [20, 20],
-            [30, 30],
-            [40, 40],
-            [50, 50],
-            [60, 60]
-        ]
+
+        function scaleIcon(id) {
+            map_location_item[id].classList.toggle("scale");
+        }
+
+        let map_location_item = document.querySelectorAll(".zone-content-info-map-location img");
+
+        $(".zone-content-info-items-item").hover(function(e) {
+            scaleIcon($(this).index());
+        }, function(e) {
+            scaleIcon($(this).index());
+        });
+
         $(".to-start").click(function(e) {
             document.querySelector(".section-start").scrollIntoView({ behavior: 'smooth' })
             e.preventDefault();
@@ -66,14 +96,8 @@ $(document).ready(function() {
             e.preventDefault();
         });
 
-        $(".zone-content-items-item").hover(function(e) {
-            let index = $(this).index();
-            $(".zone-content-map-location").css("top", `${zone_map_coords[index][0]}%`);
-            $(".zone-content-map-location").css("left", `${zone_map_coords[index][1]}%`);
-            console.log();
-        }, function(e) {
-            $(".zone-content-map-location").css("top", `-10%`);
-            $(".zone-content-map-location").css("top", `-10%`);
+        $(".openModalApp").click(function() {
+            showModal(".modalApp");
         });
     }
 

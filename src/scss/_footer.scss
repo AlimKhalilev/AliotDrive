@@ -1,7 +1,6 @@
 // === Footer [ Стили для футера, используемые на всех страницах ] ===
 
 .section-footer {
-    //background-image: linear-gradient(to right, rgba(253, 62, 255, 0.9) 0%, rgba(85, 174, 253, 0.9) 100%);
     background-color: $color_black_main;
     padding: 3.8rem 0;
 
@@ -22,6 +21,7 @@
             font-size: 16px;
             text-transform: uppercase;
             margin-bottom: 0.8rem;
+            font-family: 'HeliosBlackC', sans-serif;
         }
 
         a {
@@ -31,12 +31,18 @@
             &:hover {
                 text-decoration: underline;
             }
+
+            &.footer-info-logo {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
 
         .column {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            //justify-content: space-between;
 
             @media ($media_sm) {
                 &:not(:last-child) {
@@ -47,16 +53,10 @@
 
         &-info {
 
-            a {
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-
             &-logo {
                 display: flex;
                 align-items: center;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
 
                 img {
                     width: 3.625rem;
@@ -73,12 +73,13 @@
                 }
             }
 
-            &-text {
+            &-links {
                 display: flex;
                 flex-direction: column;
 
-                span {
+                a {
                     white-space: nowrap;
+                    font-size: 0.9rem;
 
                     &:not(:last-child) {
                         margin-bottom: 0.7rem;
@@ -95,7 +96,7 @@
 
                 a {
                     &:not(:last-child) {
-                        margin-bottom: 0.5rem;
+                        margin-bottom: 0.6rem;
                     }
                 }
             }
@@ -155,6 +156,8 @@
             }
 
             &-network {
+                margin-top: 1rem;
+
                 &-content {
                     display: flex;
                     
@@ -177,14 +180,14 @@
                         }
                     }
 
-                    &-links {
+                    &-right {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                         margin-left: 1rem;
 
-                        a {
-                            font-size: 0.6rem;
+                        span {
+                            font-size: 0.65rem;
                         }
                     }
                 }

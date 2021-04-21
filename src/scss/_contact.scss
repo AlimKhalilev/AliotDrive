@@ -2,6 +2,7 @@
 
 .section-contact {
     padding: 5.5rem 0;
+    background-color: $color_bg_grey;
 
     @media ($media_xs) {
         padding: 3.5rem 0;
@@ -85,6 +86,16 @@
     box-shadow: 0 0 1.25rem 0 rgba(0, 0, 0, 0.1);
     background-color: $color_white;
     width: 34rem;
+
+    &.modalApp {
+        width: 45rem;
+        padding: 5rem 3.5rem;
+
+        @media ($media_xs) {
+            width: 90%;
+            padding: 1.5rem;
+        }
+    }
 
     @media ($media_xs) {
         width: 90%;
@@ -273,12 +284,33 @@
             img {
                 width: 6.5rem;
                 height: 6.5rem;
+
+                &.modalApp {
+                    width: 10rem;
+                    height: 10rem;
+
+                    @media ($media_xs) {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                }
             }
         }
 
         &-text {
             line-height: 1.6;
             margin: 1.5rem 0;
+
+            &.modalApp {
+                font-family: 'HeliosBlackC', sans-serif;
+                font-size: 1.9rem;
+                margin: 2rem 0;
+
+                @media ($media_xs) {
+                    margin: 1rem;
+                    font-size: 1.4rem;
+                }
+            }
         }
 
         &-button {

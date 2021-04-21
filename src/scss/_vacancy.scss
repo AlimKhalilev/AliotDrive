@@ -1,0 +1,87 @@
+// === vacancy ===
+
+.section-vacancy {
+    padding: var(--section_padding) 0;
+    background-color: $color_bg_grey;
+
+    .section-inner {
+    
+    }
+    
+    .vacancy {
+
+        &-header {
+            text-align: center;
+        }
+
+        &-cards {
+            width: 70%;
+            margin-top: var(--section_padding);
+
+            @media ($media_sm) {
+                width: 100%;
+            }
+
+            &-card {
+                padding: 2rem;
+                border-radius: 2rem;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                background-color: $color_white;
+
+                .card {
+
+                    &-header {
+                        display: flex;
+                        align-items: center;
+
+                        h3 {
+                            font-size: 1.2rem;
+                            font-family: 'HeliosBlackC', sans-serif;
+                            margin-left: 0.8rem;
+                        }
+
+                        img {
+                            min-width: 2.8rem;
+                        }
+                    }
+
+                    &-content {
+                        padding-left: calc(2.8rem + 0.8rem);
+                        margin-top: 1rem;
+
+                        @media ($media_xs) {
+                            padding: 0;
+                        }
+
+                        &-block {
+                            line-height: 1.6;
+
+                            ul {
+                                padding-left: 1.2rem;
+
+                                li {
+                                    list-style-type: disc;
+                                }
+                            }
+
+                            a {
+                                color: $color_black_main;
+                            }
+
+                            &:not(:last-child) {
+                                margin-bottom: 1.8rem;
+                            }
+                        }
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 2.6rem;
+                }
+            }
+        }
+    }
+    
+}
+
+// === / vacancy ===

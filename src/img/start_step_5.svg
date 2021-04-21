@@ -1,0 +1,87 @@
+<svg id="Сгруппировать_114" data-name="Сгруппировать 114" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.52" height="46.695" viewBox="0 0 42.52 46.695">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.075" y2="1.24" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2759ff"/>
+      <stop offset="1" stop-color="#3c47d9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.158" y1="0.12" x2="0.848" y2="0.856" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff3eff"/>
+      <stop offset="1" stop-color="#2759ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-26.855" y1="-73.757" x2="-26.162" y2="-73.063" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e2e1e6"/>
+      <stop offset="0.845" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-42.414" y1="-56.384" x2="-41.414" y2="-56.384" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_111" data-name="Сгруппировать 111">
+    <path id="Контур_519" data-name="Контур 519" d="M832.056,2220.783H818.239v10.6l13.816-10.6Z" transform="translate(-796.98 -2184.689)" fill="url(#linear-gradient)"/>
+    <rect id="Прямоугольник_16" data-name="Прямоугольник 16" width="41.732" height="41.732" rx="20.866" fill="url(#linear-gradient-2)"/>
+    <g id="Сгруппировать_110" data-name="Сгруппировать 110" transform="translate(0.889 0.796)">
+      <g id="Сгруппировать_109" data-name="Сгруппировать 109" transform="translate(4.216 4.216)" style="mix-blend-mode: multiply;isolation: isolate">
+        <circle id="Эллипс_231" data-name="Эллипс 231" cx="15.897" cy="15.897" r="15.897" transform="translate(5.621 5.621)" fill="#fff" opacity="0"/>
+        <circle id="Эллипс_232" data-name="Эллипс 232" cx="15.897" cy="15.897" r="15.897" transform="translate(5.511 5.51)" fill="#fcfcfc" opacity="0.02"/>
+        <circle id="Эллипс_233" data-name="Эллипс 233" cx="15.897" cy="15.897" r="15.897" transform="translate(5.4 5.4)" fill="#f8f8f9" opacity="0.039"/>
+        <circle id="Эллипс_234" data-name="Эллипс 234" cx="15.897" cy="15.897" r="15.897" transform="translate(5.29 5.29)" fill="#f5f5f6" opacity="0.059"/>
+        <circle id="Эллипс_235" data-name="Эллипс 235" cx="15.897" cy="15.897" r="15.897" transform="translate(5.18 5.18)" fill="#f2f2f3" opacity="0.078"/>
+        <circle id="Эллипс_236" data-name="Эллипс 236" cx="15.897" cy="15.897" r="15.897" transform="translate(5.07 5.07)" fill="#eeeff0" opacity="0.098"/>
+        <circle id="Эллипс_237" data-name="Эллипс 237" cx="15.897" cy="15.897" r="15.897" transform="translate(4.96 4.959)" fill="#ebebee" opacity="0.118"/>
+        <circle id="Эллипс_238" data-name="Эллипс 238" cx="15.897" cy="15.897" r="15.897" transform="translate(4.849 4.849)" fill="#e7e8eb" opacity="0.137"/>
+        <circle id="Эллипс_239" data-name="Эллипс 239" cx="15.897" cy="15.897" r="15.897" transform="translate(4.739 4.739)" fill="#e4e5e8" opacity="0.157"/>
+        <circle id="Эллипс_240" data-name="Эллипс 240" cx="15.897" cy="15.897" r="15.897" transform="translate(4.629 4.629)" fill="#e1e1e5" opacity="0.176"/>
+        <circle id="Эллипс_241" data-name="Эллипс 241" cx="15.897" cy="15.897" r="15.897" transform="translate(4.519 4.519)" fill="#dddee2" opacity="0.196"/>
+        <circle id="Эллипс_242" data-name="Эллипс 242" cx="15.897" cy="15.897" r="15.897" transform="translate(4.408 4.408)" fill="#dadbdf" opacity="0.216"/>
+        <circle id="Эллипс_243" data-name="Эллипс 243" cx="15.897" cy="15.897" r="15.897" transform="translate(4.298 4.298)" fill="#d7d7dc" opacity="0.235"/>
+        <circle id="Эллипс_244" data-name="Эллипс 244" cx="15.897" cy="15.897" r="15.897" transform="translate(4.188 4.188)" fill="#d3d4d9" opacity="0.255"/>
+        <circle id="Эллипс_245" data-name="Эллипс 245" cx="15.897" cy="15.897" r="15.897" transform="translate(4.078 4.078)" fill="#d0d1d6" opacity="0.275"/>
+        <circle id="Эллипс_246" data-name="Эллипс 246" cx="15.897" cy="15.897" r="15.897" transform="translate(3.968 3.968)" fill="#ccced3" opacity="0.294"/>
+        <circle id="Эллипс_247" data-name="Эллипс 247" cx="15.897" cy="15.897" r="15.897" transform="translate(3.857 3.857)" fill="#c9cad1" opacity="0.314"/>
+        <circle id="Эллипс_248" data-name="Эллипс 248" cx="15.897" cy="15.897" r="15.897" transform="translate(3.747 3.747)" fill="#c6c7ce" opacity="0.333"/>
+        <circle id="Эллипс_249" data-name="Эллипс 249" cx="15.897" cy="15.897" r="15.897" transform="translate(3.637 3.637)" fill="#c2c4cb" opacity="0.353"/>
+        <circle id="Эллипс_250" data-name="Эллипс 250" cx="15.897" cy="15.897" r="15.897" transform="translate(3.527 3.527)" fill="#bfc0c8" opacity="0.373"/>
+        <circle id="Эллипс_251" data-name="Эллипс 251" cx="15.897" cy="15.897" r="15.897" transform="translate(3.417 3.417)" fill="#bcbdc5" opacity="0.392"/>
+        <circle id="Эллипс_252" data-name="Эллипс 252" cx="15.897" cy="15.897" r="15.897" transform="translate(3.306 3.306)" fill="#b8bac2" opacity="0.412"/>
+        <circle id="Эллипс_253" data-name="Эллипс 253" cx="15.897" cy="15.897" r="15.897" transform="translate(3.196 3.196)" fill="#b5b7bf" opacity="0.431"/>
+        <circle id="Эллипс_254" data-name="Эллипс 254" cx="15.897" cy="15.897" r="15.897" transform="translate(3.086 3.086)" fill="#b1b3bc" opacity="0.451"/>
+        <circle id="Эллипс_255" data-name="Эллипс 255" cx="15.897" cy="15.897" r="15.897" transform="translate(2.976 2.976)" fill="#aeb0b9" opacity="0.471"/>
+        <circle id="Эллипс_256" data-name="Эллипс 256" cx="15.897" cy="15.897" r="15.897" transform="translate(2.865 2.865)" fill="#abadb6" opacity="0.49"/>
+        <circle id="Эллипс_257" data-name="Эллипс 257" cx="15.897" cy="15.897" r="15.897" transform="translate(2.755 2.755)" fill="#a7a9b4" opacity="0.51"/>
+        <circle id="Эллипс_258" data-name="Эллипс 258" cx="15.897" cy="15.897" r="15.897" transform="translate(2.645 2.645)" fill="#a4a6b1" opacity="0.529"/>
+        <circle id="Эллипс_259" data-name="Эллипс 259" cx="15.897" cy="15.897" r="15.897" transform="translate(2.535 2.535)" fill="#a1a3ae" opacity="0.549"/>
+        <circle id="Эллипс_260" data-name="Эллипс 260" cx="15.897" cy="15.897" r="15.897" transform="translate(2.425 2.425)" fill="#9d9fab" opacity="0.569"/>
+        <circle id="Эллипс_261" data-name="Эллипс 261" cx="15.897" cy="15.897" r="15.897" transform="translate(2.314 2.314)" fill="#9a9ca8" opacity="0.588"/>
+        <circle id="Эллипс_262" data-name="Эллипс 262" cx="15.897" cy="15.897" r="15.897" transform="translate(2.204 2.204)" fill="#9699a5" opacity="0.608"/>
+        <circle id="Эллипс_263" data-name="Эллипс 263" cx="15.897" cy="15.897" r="15.897" transform="translate(2.094 2.094)" fill="#9396a2" opacity="0.627"/>
+        <circle id="Эллипс_264" data-name="Эллипс 264" cx="15.897" cy="15.897" r="15.897" transform="translate(1.984 1.984)" fill="#90929f" opacity="0.647"/>
+        <circle id="Эллипс_265" data-name="Эллипс 265" cx="15.897" cy="15.897" r="15.897" transform="translate(1.874 1.874)" fill="#8c8f9c" opacity="0.667"/>
+        <circle id="Эллипс_266" data-name="Эллипс 266" cx="15.897" cy="15.897" r="15.897" transform="translate(1.763 1.763)" fill="#898c99" opacity="0.686"/>
+        <circle id="Эллипс_267" data-name="Эллипс 267" cx="15.897" cy="15.897" r="15.897" transform="translate(1.653 1.653)" fill="#868897" opacity="0.706"/>
+        <circle id="Эллипс_268" data-name="Эллипс 268" cx="15.897" cy="15.897" r="15.897" transform="translate(1.543 1.543)" fill="#828594" opacity="0.725"/>
+        <circle id="Эллипс_269" data-name="Эллипс 269" cx="15.897" cy="15.897" r="15.897" transform="translate(1.433 1.433)" fill="#7f8291" opacity="0.745"/>
+        <circle id="Эллипс_270" data-name="Эллипс 270" cx="15.897" cy="15.897" r="15.897" transform="translate(1.323 1.323)" fill="#7b7f8e" opacity="0.765"/>
+        <circle id="Эллипс_271" data-name="Эллипс 271" cx="15.897" cy="15.897" r="15.897" transform="translate(1.212 1.212)" fill="#787b8b" opacity="0.784"/>
+        <circle id="Эллипс_272" data-name="Эллипс 272" cx="15.897" cy="15.897" r="15.897" transform="translate(1.102 1.102)" fill="#757888" opacity="0.804"/>
+        <circle id="Эллипс_273" data-name="Эллипс 273" cx="15.897" cy="15.897" r="15.897" transform="translate(0.992 0.992)" fill="#717585" opacity="0.824"/>
+        <circle id="Эллипс_274" data-name="Эллипс 274" cx="15.897" cy="15.897" r="15.897" transform="translate(0.882 0.882)" fill="#6e7182" opacity="0.843"/>
+        <circle id="Эллипс_275" data-name="Эллипс 275" cx="15.897" cy="15.897" r="15.897" transform="translate(0.771 0.771)" fill="#6b6e7f" opacity="0.863"/>
+        <circle id="Эллипс_276" data-name="Эллипс 276" cx="15.897" cy="15.897" r="15.897" transform="translate(0.661 0.661)" fill="#676b7c" opacity="0.882"/>
+        <circle id="Эллипс_277" data-name="Эллипс 277" cx="15.897" cy="15.897" r="15.897" transform="translate(0.551 0.551)" fill="#64677a" opacity="0.902"/>
+        <circle id="Эллипс_278" data-name="Эллипс 278" cx="15.897" cy="15.897" r="15.897" transform="translate(0.441 0.441)" fill="#606477" opacity="0.922"/>
+        <circle id="Эллипс_279" data-name="Эллипс 279" cx="15.897" cy="15.897" r="15.897" transform="translate(0.331 0.331)" fill="#5d6174" opacity="0.941"/>
+        <circle id="Эллипс_280" data-name="Эллипс 280" cx="15.897" cy="15.897" r="15.897" transform="translate(0.22 0.22)" fill="#5a5e71" opacity="0.961"/>
+        <circle id="Эллипс_281" data-name="Эллипс 281" cx="15.897" cy="15.897" r="15.897" transform="translate(0.11 0.11)" fill="#565a6e" opacity="0.98"/>
+        <circle id="Эллипс_282" data-name="Эллипс 282" cx="15.897" cy="15.897" r="15.897" fill="#53576b"/>
+      </g>
+      <circle id="Эллипс_283" data-name="Эллипс 283" cx="16.606" cy="16.606" r="16.606" transform="translate(0 7.631) rotate(-13.283)" fill="url(#linear-gradient-3)"/>
+      <path id="Контур_520" data-name="Контур 520" d="M817.846,2222.338a16.876,16.876,0,1,1,16.876-16.876A16.894,16.894,0,0,1,817.846,2222.338Zm0-33.212a16.337,16.337,0,1,0,16.336,16.336A16.355,16.355,0,0,0,817.846,2189.126Z" transform="translate(-797.868 -2185.485)" fill="url(#linear-gradient-4)"/>
+    </g>
+  </g>
+  <g id="Сгруппировать_113" data-name="Сгруппировать 113" transform="translate(14.58 9.329)">
+    <g id="Сгруппировать_112" data-name="Сгруппировать 112">
+      <path id="Контур_521" data-name="Контур 521" d="M816.109,2197a.326.326,0,0,0-.331.331v5a.33.33,0,0,0,.5.29,6.352,6.352,0,0,1,3.019-.7c2.522,0,4.838,1.116,4.838,3.928v5.706c0,3.267-3.474,4.756-6.285,4.756-3.722,0-6.162-1.7-6.286-5.376a.326.326,0,0,1,.331-.331h3.556a.319.319,0,0,1,.331.29c.042,1.406.414,2.233,2.15,2.233,1.076,0,1.985-.5,1.985-1.654V2206.3c0-1.034-1.075-1.572-1.985-1.572a2.341,2.341,0,0,0-2.067,1.034.349.349,0,0,1-.29.166h-3.184a.357.357,0,0,1-.331-.331v-11.248a.326.326,0,0,1,.331-.33H823.8a.326.326,0,0,1,.331.33v2.316a.357.357,0,0,1-.331.331Z" transform="translate(-811.56 -2194.018)" fill="#2b454e"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+// === partners ===
+
+.section-partners {
+    padding: var(--section_padding) 0;
+    background-color: $color_bg_grey;
+
+    .section-inner {
+    
+    }
+    
+    .partners {
+
+        &-header {
+            text-align: center;
+
+            h4 {
+                font-weight: normal;
+                line-height: 1.6;
+                margin-top: 1rem;
+            }
+        }
+
+        &-icons {
+            padding: 4rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 2rem;
+
+            @media ($media_sm) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media ($media_xs) {
+                grid-template-columns: 1fr;
+            }
+
+            &-icon {
+                border-radius: 2rem;
+                background-color: $color_white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.5rem 2rem;
+
+                @media ($media_sm) {
+                    padding: 2.5rem 2rem;
+                }
+
+
+                picture {
+                    img {
+                        width: 12rem;
+                    }
+                }
+            }
+        }
+
+        &-info {
+
+            &-block {
+                text-align: center;
+                line-height: 1.5;
+
+                @media ($media_xs) {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .title {
+                    text-transform: uppercase;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.25rem;
+
+                    @media ($media_xs) {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .number {
+                    a {
+                        text-decoration: none;
+                        color: $color_black_main;
+                    }
+                }
+
+                .address {
+                    margin: 0.8rem 0 1.2rem 0;
+                }
+
+                .button {
+
+                    button {
+                        padding: 1.2rem 1.9rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+
+// === / partners ===

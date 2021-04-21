@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+
+		@@include('_head.html', {
+			"title": "Вакансии - AliotDrive"
+		})
+
+	</head>
+	<body id="contact_page">
+
+		@@include("_header.html")
+
+        <section class="section-outer section-vacancy">
+            <div class="section-inner vacancy">
+                <div class="vacancy-header">
+                    <h2 class="section_title">Вакансии</h2>
+                </div>
+                <div class="vacancy-cards">
+                    <div class="vacancy-cards-card">
+                        <div class="card-header">
+                            <img src="./img/vacancy_icon_1.svg" alt="Иконка вакансии">
+                            <h3>Оператор в колл-центр (диспетчер)</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-block">
+                                <h4>Обязанности:</h4>
+                                <ul class="card-content-block-list">
+                                    <li>прием и обработка поступающих звонков и прочих обращений.</li>
+                                    <li>регистрация всех обращений в системе.</li>
+                                    <li>консультирование обратившихся относительно услуг компании.</li>
+                                </ul>
+                            </div>
+                            <div class="card-content-block">
+                                <h4>Требования:</h4>
+                                <ul class="card-content-block-list">
+                                    <li>От вас требуются только коммуникативные качества.</li>
+                                    <li>регистрация всех обращений в системе.</li>
+                                    <li>консультирование обратившихся относительно услуг компании.</li>
+                                </ul>
+                            </div>
+                            <div class="card-content-block">
+                                <h4>Мы гарантируем:</h4>
+                                <ul class="card-content-block-list">
+                                    <li>Обучение</li>
+                                    <li>Гибкий график работы</li>
+                                    <li>Официальное трудоустройство</li>
+                                    <li>Работа в развивающейся компании.</li>
+                                </ul>
+                            </div>
+                            <div class="card-content-block">
+                                <p>Контактное лицо: <a href="tel: 8-978-771-90-03">8-978-771-90-03</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancy-cards-card">
+                        <div class="card-header">
+                            <img src="./img/vacancy_icon_2.svg" alt="Иконка вакансии">
+                            <h3>Водители-механики</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-block">
+                                <h4>Обязанности:</h4>
+                                <ul class="card-content-block-list">
+                                    <li>Заправка автомобилей топливом.</li>
+                                    <li>Поддержка технической исправности машины, доставка. Автомобиля для устранения неисправностей в автосервис.</li>
+                                    <li>Доставка запасных частей в автосервисы под отчет.</li>
+                                    <li>Перегон автомобилей на места расстановки по требованию.</li>
+                                    <li>Ведение отчетной документации.</li>
+                                </ul>
+                            </div>
+                            <div class="card-content-block">
+                                <h4>Требования:</h4>
+                                <ul class="card-content-block-list">
+                                    <li>Наличие водительского удостоверения категории В.</li>
+                                    <li>Знание правил проведения технического обслуживания автомобиля.</li>
+                                </ul>
+                            </div>
+                            <div class="card-content-block">
+                                <h4>Мы гарантируем:</h4>
+                                <ul class="card-content-block-list">
+                                    <li>Обучение</li>
+                                    <li>Гибкий график работы</li>
+                                    <li>Официальное трудоустройство</li>
+                                    <li>Работа в развивающейся компании.</li>
+                                </ul>
+                            </div>
+                            <div class="card-content-block">
+                                <p>Контактное лицо: <a href="tel: 8-978-771-90-03">8-978-771-90-03</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="modal_form">
+            <div class="modal-header">
+                <h2 class="section_title">Заполните форму, и мы<br>свяжемся с вами</h2>
+            </div>
+            <div class="modal-close">
+                <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
+            </div>
+            <form class="modal-form">
+                <div class="item modal-form-container">
+                    <input class="modal-form-text modal_input" type="text" placeholder="Имя" name="name">
+                    <svg><use xlink:href="img/main.svg#modal_user"></use></svg>
+                </div>
+                <div class="item modal-form-container">
+                    <input class="modal-form-tel modal_input number" type="tel" placeholder="Телефон" name="tel">
+                    <svg><use xlink:href="img/main.svg#modal_phone"></use></svg>
+                </div>
+                <div class="item modal-form-container">
+                    <textarea class="modal-form-question modal_input" name="question" placeholder="Опишите ваш вопрос"></textarea>
+                    <svg><use xlink:href="img/main.svg#modal_comment"></use></svg>
+                </div>
+                
+                <label class="item modal-form-personal">
+                    <input class="visually_hidden modal_input" type="checkbox">
+                    <span class="pseudo">
+                        <img src="./img/check.svg" alt="Галочка выбора">
+                    </span>
+                    <span class="text">Подтверждаю согласие на <a href="#">обработку персональных данных</a></span>
+                </label>
+                <div class="item modal-form-error">
+                    <img src="./img/error_icon.svg" alt="Иконка ошибки">
+                    <span>Заполните все поля!</span>
+                </div>
+                <div class="item modal-form-button">
+                    <button class="btn_primary" id="send_button">Отправить</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal" id="modal_success">
+            <div class="modal-header">
+                <h2 class="section_title">Заявка создана</h2>
+            </div>
+            <div class="modal-close">
+                <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-icon">
+                    <img src="./img/start_step_4.svg" alt="Иконка успеха">
+                </div>
+                <p class="modal-content-text">
+                    Заявка по вашему обращению была создана. 
+                    Мы ответим на ваш email в ближайшее время. 
+                    Если у вас срочный вопрос – свяжитесь 
+                    с нами по телефону.
+                </p>
+                <div class="modal-content-button">
+                    <button class="btn_primary modal-close-dop">Хорошо</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+		@@include("_footer.html")
+
+	</body>
+</html>
