@@ -187,9 +187,7 @@ $(".cars-slider-container").click(function(e) {
         }
     ]
 });  ;
-
-    if (isContactPage) {
-        let overlay = $(".overlay");
+    let overlay = $(".overlay");
 
 let modal_type = null;
 let modal_form_content = [];
@@ -225,7 +223,7 @@ $("#open_modal").click(function() {
     modal_type = "support";
 });
 
-$("#open_modal_dop").click(function() {
+$("#open_modal_dop, #open_modal_footer").click(function() {
     showModal("#modal_form");
     modal_type = "partner";
 });
@@ -282,7 +280,6 @@ modal_form_save.addEventListener("click", (e) => {
 
     e.preventDefault();
 });;
-    }
 
     let faq_content = $(".faq-content-item");
 

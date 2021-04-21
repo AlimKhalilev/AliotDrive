@@ -34,7 +34,7 @@ $("#open_modal").click(function() {
     modal_type = "support";
 });
 
-$("#open_modal_dop").click(function() {
+$("#open_modal_dop, #open_modal_footer").click(function() {
     showModal("#modal_form");
     modal_type = "partner";
 });

@@ -1399,7 +1399,7 @@ body {
   width: 21px;
   height: 4px;
   margin-bottom: 4px;
-  background: #e7e7e7;
+  background: #c4c1c1;
   border-radius: 4px;
   -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   -o-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
@@ -1642,6 +1642,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.section-footer .footer-navigation-links a {
+  cursor: pointer;
 }
 
 .section-footer .footer-navigation-links a:not(:last-child) {
@@ -2242,7 +2246,7 @@ body {
 
 .section-main {
   min-height: 100vh;
-  background-image: url(../img/main_bg.jpg);
+  background-image: url(../img/main_bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2287,6 +2291,12 @@ body {
 }
 
 .section-main .main-content-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-main .main-content-buttons .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2804,6 +2814,9 @@ body {
 }
 
 .section-zone .zone-content-info-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   height: 15rem;
 }
@@ -2957,8 +2970,8 @@ body {
     width: 100%;
   }
 
-  .section-main {
-    background-image: url(../img/main_bg_planshet.png);
+  .section-main .main-img img {
+    display: none;
   }
 
   .section-tariffs .section-inner {
@@ -3076,6 +3089,12 @@ body {
     height: auto;
   }
 
+  .section-zone .zone-content-info-map picture {
+    -webkit-transform: translateY(0.8rem);
+        -ms-transform: translateY(0.8rem);
+            transform: translateY(0.8rem);
+  }
+
   .section-zone .zone-content-info-map-img {
     max-width: 100%;
   }
@@ -3177,6 +3196,37 @@ body {
     padding: 0;
   }
 
+  .section-main .main-content {
+    margin: 0;
+  }
+
+  .section-main .main-content-img img {
+    width: 100%;
+  }
+
+  .section-main .main-content-text,
+  .section-main .main-content-buttons {
+    padding: 0;
+  }
+
+  .section-main .main-content-text {
+    font-size: 1rem;
+  }
+
+  .section-main .main-content-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .section-main .main-content-buttons .icons {
+    margin-top: 1rem;
+  }
+
   .section-main .main-content-buttons-button .btn_primary {
     font-size: 1.3rem;
     padding: 0.75rem 1.35rem;
@@ -3242,8 +3292,3 @@ body {
 }
 
 .webp-support .section-main { background-image: url(../img/main_bg.webp); }
-
-@media (max-width: 768px) {
-
-  .webp-support .section-main { background-image: url(../img/main_bg_planshet.webp); }
-}

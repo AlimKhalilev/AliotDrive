@@ -95,6 +95,8 @@
                 flex-direction: column;
 
                 a {
+                    cursor: pointer; 
+                    
                     &:not(:last-child) {
                         margin-bottom: 0.6rem;
                     }

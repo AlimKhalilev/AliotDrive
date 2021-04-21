@@ -55,10 +55,7 @@ $(document).ready(function() {
     --include("_slider-config.js");
     --include("_cars-slider.js");
     --include("_tariffs-slider.js");
-
-    if (isContactPage) {
-        --include("_modal.js");
-    }
+    --include("_modal.js");
 
     let faq_content = $(".faq-content-item");
 

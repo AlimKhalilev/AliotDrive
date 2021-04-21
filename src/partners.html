@@ -42,69 +42,6 @@
             </div>
         </section>
 
-        <div class="modal" id="modal_form">
-            <div class="modal-header">
-                <h2 class="section_title">Заполните форму, и мы<br>свяжемся с вами</h2>
-            </div>
-            <div class="modal-close">
-                <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
-            </div>
-            <form class="modal-form">
-                <div class="item modal-form-container">
-                    <input class="modal-form-text modal_input" type="text" placeholder="Имя" name="name">
-                    <svg><use xlink:href="img/main.svg#modal_user"></use></svg>
-                </div>
-                <div class="item modal-form-container">
-                    <input class="modal-form-tel modal_input number" type="tel" placeholder="Телефон" name="tel">
-                    <svg><use xlink:href="img/main.svg#modal_phone"></use></svg>
-                </div>
-                <div class="item modal-form-container">
-                    <textarea class="modal-form-question modal_input" name="question" placeholder="Опишите ваш вопрос"></textarea>
-                    <svg><use xlink:href="img/main.svg#modal_comment"></use></svg>
-                </div>
-                
-                <label class="item modal-form-personal">
-                    <input class="visually_hidden modal_input" type="checkbox">
-                    <span class="pseudo">
-                        <img src="./img/check.svg" alt="Галочка выбора">
-                    </span>
-                    <span class="text">Подтверждаю согласие на <a href="#">обработку персональных данных</a></span>
-                </label>
-                <div class="item modal-form-error">
-                    <img src="./img/error_icon.svg" alt="Иконка ошибки">
-                    <span>Заполните все поля!</span>
-                </div>
-                <div class="item modal-form-button">
-                    <button class="btn_primary" id="send_button">Отправить</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="modal" id="modal_success">
-            <div class="modal-header">
-                <h2 class="section_title">Заявка создана</h2>
-            </div>
-            <div class="modal-close">
-                <img src="./img/close_icon.svg" alt="Иконка закрытия окна">
-            </div>
-            <div class="modal-content">
-                <div class="modal-content-icon">
-                    <img src="./img/start_step_4.svg" alt="Иконка успеха">
-                </div>
-                <p class="modal-content-text">
-                    Заявка по вашему обращению была создана. 
-                    Мы ответим на ваш email в ближайшее время. 
-                    Если у вас срочный вопрос – свяжитесь 
-                    с нами по телефону.
-                </p>
-                <div class="modal-content-button">
-                    <button class="btn_primary modal-close-dop">Хорошо</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="overlay"></div>
-
 		@@include("_footer.html")
 
 	</body>
