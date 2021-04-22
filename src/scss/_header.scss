@@ -5,6 +5,7 @@
     width: 100%;
     background-color: $color_black_main;
     transition: 0.3s ease-in-out;
+    z-index: 1;
 
     &.static {
         position: static;

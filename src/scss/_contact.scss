@@ -31,6 +31,10 @@
                 text-align: center;
                 line-height: 1.5;
 
+                @media ($media_sm) {
+                    flex-basis: 40%;
+                }
+
                 @media ($media_xs) {
                     &:not(:last-child) {
                         margin-bottom: 2rem;
@@ -48,6 +52,9 @@
                 }
 
                 .number {
+                    @media ($media_sm) {
+                        white-space: nowrap;
+                    }
                     a {
                         text-decoration: none;
                         color: $color_black_main;

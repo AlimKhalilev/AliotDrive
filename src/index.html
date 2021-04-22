@@ -15,7 +15,15 @@
 			<div class="section-inner main">
 				<div class="main-content">
 					<div class="main-content-img">
-						<img src="./img/text_main.svg" alt="Изображение текста описания">
+
+						<picture>
+							<source media="(max-width: 600px)" srcset="./img/text_main_mobile.svg">
+							<source media="(max-width: 800px)" srcset="./img/text_main_planshet.svg">
+							<img src="./img/text_main.svg" alt="Изображение текста описания">
+						</picture>
+
+
+						<!-- <img src="./img/text_main.svg" alt="Изображение текста описания"> -->
 					</div>
 					<div class="main-content-text">
 						<h2>Скачай приложение<br>и открой Крым с нами!</h2>
@@ -25,10 +33,10 @@
 							<button class="btn_primary openModalApp">Скачать QR-код</button>
 						</div>
 						<div class="icons">
-							<a href="#" class="main-content-buttons-button">
+							<a class="main-content-buttons-button openModalApp">
 								<img src="./img/icon_apple_main.svg" alt="App store иконка">
 							</a>
-							<a href="#" class="main-content-buttons-button">
+							<a class="main-content-buttons-button openModalApp">
 								<img src="./img/icon_android_main.svg" alt="Play market иконка">
 							</a>
 						</div>
@@ -67,7 +75,7 @@
 								</div>
 							</div>
 							<div class="card-button">
-								<a href="#" class="btn_primary">Подробнее</a>
+								<button class="btn_primary openModalApp">Подробнее</button>
 							</div>
 						</div>
 					</div>
@@ -92,7 +100,7 @@
 								</div>
 							</div>
 							<div class="card-button">
-								<a href="#" class="btn_primary">Подробнее</a>
+								<button class="btn_primary openModalApp">Подробнее</button>
 							</div>
 						</div>
 					</div>
@@ -117,7 +125,7 @@
 								</div>
 							</div>
 							<div class="card-button">
-								<a href="#" class="btn_primary">Подробнее</a>
+								<button class="btn_primary openModalApp">Подробнее</button>
 							</div>
 						</div>
 					</div>
@@ -233,7 +241,7 @@
 							</div>
 							<div class="start-content-steps-step-text">
 								<h3>Заверши аренду</h3>
-								<p>Припаркуйся и нажми «Завершить». Деньги спишутся автоматически.</p>
+								<p>Припаркуйся и нажми «Завершить». Деньги спишутся автоматически</p>
 							</div>
 						</div>
 					</div>
@@ -314,7 +322,7 @@
 						<div class="cars-info-descr-relative">
 							<p class="cars-info-descr-text">Динамичный и лёгкий в управлении седан. Более приятные цены по сравнению. </p>
 							<div class="cars-info-descr-btn">
-								<a class="btn_primary" href="#">Тарифы</a>
+								<button class="btn_primary openModalApp">Тарифы</button>
 							</div>
 						</div>
 					</div>
@@ -381,12 +389,12 @@
 						<div class="zone-content-info-map">
 							<img class="zone-content-info-map-img" src="./img/zone_map.svg" alt="Карта Крыма">
 							<div class="zone-content-info-map-location">
-								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 55%; left: 45%">
-								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 78%; left: 28%">
-								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 74%; left: 47%">
-								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 60%; left: 68%">
-								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 66%; left: 59%">
-								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 85%; left: 41%">
+								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 63%; left: 38%">
+								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 81%; left: 24%">
+								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 74%; left: 44%">
+								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 60%; left: 65%">
+								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 66%; left: 56%">
+								<img src="./img/map_location.svg" alt="Иконка геолокации" style="top: 85%; left: 38%">
 							</div>
 						</div>
 					</div>
