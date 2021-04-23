@@ -3270,9 +3270,9 @@ body {
 
   .section-main .main-img {
     top: 50%;
-    -webkit-transform: translateY(calc(-50% + 60px));
-        -ms-transform: translateY(calc(-50% + 60px));
-            transform: translateY(calc(-50% + 60px));
+    -webkit-transform: translateY(calc(-50% + 12vh));
+        -ms-transform: translateY(calc(-50% + 12vh));
+            transform: translateY(calc(-50% + 12vh));
     text-align: center;
   }
 
