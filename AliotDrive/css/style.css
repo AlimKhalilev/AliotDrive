@@ -1690,6 +1690,7 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   max-width: 7rem;
+  cursor: pointer;
 }
 
 .section-footer .footer-social-app-icons a img {
