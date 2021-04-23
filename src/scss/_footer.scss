@@ -49,6 +49,12 @@
                     margin-bottom: 2rem;
                 }
             }
+
+            @media ($media_xs) {
+                &:nth-child(3) {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         &-info {
@@ -133,6 +139,11 @@
         }
 
         &-social {
+
+            @media ($media_xs) {
+                order: -1;
+                margin-bottom: 3rem;
+            }
 
             h3 {
                 margin-bottom: 1.4rem;

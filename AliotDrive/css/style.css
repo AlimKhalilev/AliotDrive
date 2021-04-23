@@ -2689,7 +2689,6 @@ body {
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   max-width: 100%;
-  max-height: 100%;
 }
 
 .section-cars .cars-slider {
@@ -3021,6 +3020,18 @@ body {
     right: 2rem;
   }
 
+  .section-main .main-img picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .section-main .main-img img {
     width: 30rem;
   }
@@ -3073,7 +3084,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 5rem 0 3rem 0;
+    margin: 3rem 0;
   }
 
   .section-cars .cars-info-descr-relative {
@@ -3100,15 +3111,6 @@ body {
         -ms-flex-align: unset;
             align-items: unset;
     height: 20rem;
-  }
-
-  .section-cars .cars-info-preview picture {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .section-cars .cars-slider-container-item {
@@ -3179,6 +3181,17 @@ body {
   html,
   body {
     font-size: 14px;
+  }
+
+  .section-footer .footer .column:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .section-footer .footer-social {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 3rem;
   }
 
   .section-contact {
@@ -3269,15 +3282,25 @@ body {
   }
 
   .section-main .main-img {
-    top: 50%;
-    -webkit-transform: translateY(calc(-50% + 12vh));
-        -ms-transform: translateY(calc(-50% + 12vh));
-            transform: translateY(calc(-50% + 12vh));
-    text-align: center;
+    min-height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .section-main .main-img img {
-    width: 70%;
+    margin-left: -1rem;
+    margin-top: 15vh;
+    width: calc(40vh - 10vw);
   }
 
   .section-tariffs {
@@ -3315,7 +3338,6 @@ body {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    height: 12rem;
   }
 
   .section-cars .cars .lSSlideOuter {
