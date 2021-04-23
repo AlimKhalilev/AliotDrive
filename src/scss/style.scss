@@ -35,6 +35,10 @@
         align-items: center;
         justify-content: space-between;
         padding-top: 6rem;
+
+        @media ($media_xs) {
+            padding-top: 5rem;
+        }
         
 
         &-content {
@@ -88,7 +92,7 @@
                 @media ($media_sm) {
                     flex-direction: column-reverse;
                     align-items: center;
-                    margin-top: 42vh;
+                    margin-top: 40vh;
                 }
 
                 .icons {
@@ -150,7 +154,7 @@
 
             @media ($media_xs) {
                 top: 50%;
-                transform: translateY(calc(-50% + 70px));
+                transform: translateY(calc(-50% + 60px));
                 text-align: center;
             }
 
@@ -162,7 +166,7 @@
                 }
 
                 @media ($media_xs) {
-                    width: 75%;
+                    width: 70%;
                 }
             }
         }
@@ -328,7 +332,6 @@
                     display: flex;
 
                     picture {
-                        display: flex;
                         width: 46rem;
 
                         @media ($media_sm) {
@@ -624,6 +627,7 @@
 
         &-slider {
             display: flex;
+            margin: 0 auto;
 
             &-container {
                 display: flex;

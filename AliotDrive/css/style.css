@@ -2470,9 +2470,6 @@ body {
 }
 
 .section-start .start-content-preview-img picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 46rem;
 }
 
@@ -2699,6 +2696,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
 .section-cars .cars-slider-container {
@@ -3005,7 +3003,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 42vh;
+    margin-top: 40vh;
   }
 
   .section-main .main-content-buttons .icons {
@@ -3247,6 +3245,10 @@ body {
     padding: 0;
   }
 
+  .section-main .main {
+    padding-top: 5rem;
+  }
+
   .section-main .main-content-img img {
     width: 100%;
   }
@@ -3268,14 +3270,14 @@ body {
 
   .section-main .main-img {
     top: 50%;
-    -webkit-transform: translateY(calc(-50% + 70px));
-        -ms-transform: translateY(calc(-50% + 70px));
-            transform: translateY(calc(-50% + 70px));
+    -webkit-transform: translateY(calc(-50% + 60px));
+        -ms-transform: translateY(calc(-50% + 60px));
+            transform: translateY(calc(-50% + 60px));
     text-align: center;
   }
 
   .section-main .main-img img {
-    width: 75%;
+    width: 70%;
   }
 
   .section-tariffs {
