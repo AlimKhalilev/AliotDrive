@@ -253,24 +253,38 @@ modal_form_save.addEventListener("click", (e) => {
         });
         modal_form_content.push(modal_type);
 
-        closeModals();
-        setTimeout(() => {
-            showModal("#modal_success");
-        }, 500);
-
         console.log(modal_form_content);
-
-        // чистим всю инфу
-
-        modal_form_inputs.forEach(item => {
-            if (item.type !== "checkbox") {
-                item.value = "";
+        $.post("./ajax.php", // POST ЗАПРОС
+        {
+            act: "send",
+            name: modal_form_content[0],
+            number: modal_form_content[1],
+            comment: modal_form_content[2],
+            type: modal_form_content[3]
+        },
+        function (result) {
+            if (result) {
+                closeModals();
+                setTimeout(() => {
+                    showModal("#modal_success");
+                }, 500);
+        
+                // чистим всю инфу
+        
+                modal_form_inputs.forEach(item => {
+                    if (item.type !== "checkbox") {
+                        item.value = "";
+                    }
+                    else {
+                        item.checked = false;
+                    }
+                });
+                modal_form_content = [];
             }
             else {
-                item.checked = false;
+                console.log("Херово!");
             }
         });
-        modal_form_content = [];
 
     }
     else {
