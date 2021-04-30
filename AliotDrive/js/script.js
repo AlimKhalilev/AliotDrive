@@ -59,6 +59,7 @@ let main_pane = $(".section-main");
 let isHeaderTop = true;
 let isMainPage = $("#main_page").length;
 let isContactPage = $("#contact_page").length;
+let ROMAN = 0;
 
 function showModal(name) {
     overlay.css("visibility", "visible");
@@ -102,6 +103,10 @@ else {
 }
 
 $(document).ready(function() {
+
+    if (ROMAN) {
+        showModal(".modalAction");
+    }
 
     let start_id = 1;
 
@@ -282,7 +287,7 @@ modal_form_save.addEventListener("click", (e) => {
                 modal_form_content = [];
             }
             else {
-                console.log("Херово!");
+                console.log("Ошибка соединения с сервером!");
             }
         });
 

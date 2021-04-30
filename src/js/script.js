@@ -8,6 +8,7 @@ let main_pane = $(".section-main");
 let isHeaderTop = true;
 let isMainPage = $("#main_page").length;
 let isContactPage = $("#contact_page").length;
+let ROMAN = 0;
 
 function showModal(name) {
     overlay.css("visibility", "visible");
@@ -51,6 +52,10 @@ else {
 }
 
 $(document).ready(function() {
+
+    if (ROMAN) {
+        showModal(".modalAction");
+    }
 
     --include("_slider-config.js");
     --include("_cars-slider.js");
