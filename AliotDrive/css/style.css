@@ -1334,6 +1334,106 @@ body {
   opacity: 0;
 }
 
+.gradient_text {
+  background: -o-linear-gradient(359.99deg, #FC3EFF 0.01%, #4859FF 93.65%);
+  background: linear-gradient(90.01deg, #FC3EFF 0.01%, #4859FF 93.65%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font_opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.trapecion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50rem;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(18.01%, #fc3eff), color-stop(93.65%, #4859ff));
+  background: -o-linear-gradient(bottom, #fc3eff 18.01%, #4859ff 93.65%);
+  background: linear-gradient(360deg, #fc3eff 18.01%, #4859ff 93.65%);
+}
+
+.trapecion::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  border-bottom: 100vh solid transparent;
+  border-left: 30rem solid white;
+}
+
+.cardPayment {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2.2rem;
+  overflow: hidden;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.cardPayment-title {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cardPayment-header {
+  background: #E6F0FF;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardPayment-header h5 {
+  font-size: inherit;
+  font-weight: 800;
+}
+
+.cardPayment-content {
+  text-align: center;
+  line-height: 1.6;
+  padding: 2rem 1.5rem;
+}
+
+.cardPayment-margin {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cardPayment-marginMax {
+  display: inline-block;
+  margin-top: 2.5rem;
+}
+
+.cardPayment-red,
+.cardPayment-yellow {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cardPayment-red {
+  color: #fe2828;
+}
+
+.cardPayment-yellow {
+  color: #ffc93e;
+}
+
 .burger {
   display: none;
   overflow: hidden;
@@ -1429,7 +1529,7 @@ body {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  z-index: 1;
+  z-index: 2;
 }
 
 .section-header.static {
@@ -2858,6 +2958,252 @@ body {
   line-height: 1.6;
 }
 
+.section-payments {
+  position: relative;
+}
+
+.section-payments .payments {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-payments .payments-img img {
+  position: absolute;
+  right: 20rem;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40rem;
+  z-index: 1;
+}
+
+.section-payments .payments-text {
+  position: relative;
+  z-index: 1;
+  padding-top: 12rem;
+}
+
+.section-payments .payments-text h1,
+.section-payments .payments-text h2 {
+  font-weight: 800;
+}
+
+.section-payments .payments-text h1 {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.section-payments .payments-text h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section-payments .payments-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+  padding-bottom: 3rem;
+}
+
+.section-payments .payments-number img {
+  width: 4.2rem;
+}
+
+.section-payments .payments-number a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-left: 2rem;
+}
+
+.section-wish .wish {
+  padding-top: 6rem;
+}
+
+.section-wish .wish-header {
+  text-align: center;
+}
+
+.section-wish .wish-header h3 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.section-wish .wish-container {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-wish .wish-container-left {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.section-wish .wish-container-left-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-wish .wish-container-left-header h4 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.section-wish .wish-container-left-types {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08);
+  border-radius: 2.2rem;
+  text-align: center;
+}
+
+.section-wish .wish-container-left-types p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 1rem;
+  color: #000;
+}
+
+.section-wish .wish-container-left-summary {
+  background-color: #E3EFFF;
+  -webkit-box-shadow: 0px 4px 4px #E3EFFF;
+          box-shadow: 0px 4px 4px #E3EFFF;
+  border-radius: 2.2rem;
+  text-align: center;
+}
+
+.section-wish .wish-container-left-summary p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1.4rem;
+  color: #000;
+}
+
+.section-wish .wish-container-left-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.section-wish .wish-container-right {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.section-wish .wish-container-right-img img {
+  max-width: 100%;
+}
+
+.section-wish .wish-container-right-cost {
+  text-align: center;
+}
+
+.section-wish .wish-container-right-cost p {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.section-wish .wish-container-right-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section-wish .wish-container-right-content p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.section-passive {
+  margin: 6.25rem 0;
+}
+
+.section-passive .passive-card {
+  padding: 4.2rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 6.25rem;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+.section-passive .passive-card-title h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.section-passive .passive-card-time p {
+  font-size: 1.7rem;
+}
+
+.section-passive .passive-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+  line-height: 1.7;
+}
+
+.section-passive .passive-card-list li {
+  background: -o-linear-gradient(359.99deg, #FC3EFF 0.01%, #4859FF 93.65%);
+  background: linear-gradient(90.01deg, #FC3EFF 0.01%, #4859FF 93.65%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section-passive .passive-card-list li::before {
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(18.01%, #fc3eff), color-stop(93.65%, #c937c4));
+  background: -o-linear-gradient(bottom, #fc3eff 18.01%, #c937c4 93.65%);
+  background: linear-gradient(360deg, #fc3eff 18.01%, #c937c4 93.65%);
+}
+
 @media (max-width: 1550px) {
   .section-inner {
     max-width: 1050px;
@@ -2866,6 +3212,10 @@ body {
   html,
   body {
     font-size: 14px;
+  }
+
+  .section-payments .payments-img img {
+    right: 10rem;
   }
 }
 
@@ -2897,6 +3247,10 @@ body {
   html,
   body {
     font-size: 16px;
+  }
+
+  .trapecion {
+    display: none;
   }
 
   .burger-menu {
@@ -3154,6 +3508,96 @@ body {
 
   .section-zone .zone-content-text {
     width: 100%;
+  }
+
+  .section-payments .payments-img img {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .section-payments .payments-text {
+    height: 88vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 6rem;
+  }
+
+  .section-payments .payments-text h1 {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  .section-payments .payments-text h2 {
+    font-size: 1.5rem;
+    margin-top: auto;
+  }
+
+  .section-payments .payments-number {
+    padding-bottom: 1rem;
+  }
+
+  .section-payments .payments-number img {
+    width: 2rem;
+  }
+
+  .section-payments .payments-number a {
+    font-size: 1.7rem;
+  }
+
+  .section-wish .wish-header h3 {
+    font-size: 1.4rem;
+  }
+
+  .section-wish .wish-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-wish .wish-container-left-header h4 {
+    font-size: 1.4rem;
+  }
+
+  .section-wish .wish-container-left-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section-wish .wish-container-left-cards .cardPayment:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .section-passive .passive-card {
+    padding: 1.5rem;
+    border-radius: 3rem;
+  }
+
+  .section-passive .passive-card-title h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-passive .passive-card-time p {
+    font-size: 1.2rem;
+  }
+
+  .section-passive .passive-card-list {
+    font-size: 1.2rem;
+  }
+
+  .section-passive .passive-card-list li::before {
+    top: 0.8rem;
   }
 }
 

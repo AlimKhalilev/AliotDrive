@@ -81,4 +81,95 @@ html, body {
     opacity: 0;
 }
 
+.gradient_text {
+    background: linear-gradient(90.01deg, #FC3EFF 0.01%, #4859FF 93.65%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font_opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.trapecion {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50rem;
+    background: linear-gradient(360deg,#fc3eff 18.01%,#4859ff 93.65%);
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        border-bottom: 100vh solid transparent;
+        border-left: 30rem solid white;
+    }
+
+    @media ($media_sm) {
+        display: none;
+    }
+}
+
+.cardPayment {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2.2rem;
+    overflow: hidden;
+    flex-basis: 48%;
+
+    &-title {
+        color: #000;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    &-header {
+        background: #E6F0FF;
+        padding: 1rem 0;
+        font-size: 1.7rem;
+        color: #000;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5 {
+            font-size: inherit;
+            font-weight: 800;
+        }
+    }
+
+    &-content {
+        text-align: center;
+        line-height: 1.6;
+        padding: 2rem 1.5rem;
+    }
+
+    &-margin {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    &-marginMax {
+        display: inline-block;
+        margin-top: 2.5rem;
+    }
+
+    &-red, &-yellow {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    &-red {
+        color: #fe2828;
+    }
+
+    &-yellow {
+        color: #ffc93e;
+    }
+}
+
 // === / Mixins ===

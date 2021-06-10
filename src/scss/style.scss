@@ -39,7 +39,6 @@
         @media ($media_xs) {
             padding-top: 5rem;
         }
-        
 
         &-content {
             margin: 0 0 0 -6rem;
@@ -833,3 +832,340 @@
 }
 
 // === / zone ===
+
+// === payments ===
+
+.section-payments {
+    position: relative;
+
+    .section-inner {
+    
+    }
+    
+    .payments {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        &-img {
+
+            img {
+                position: absolute;
+                right: 20rem;
+                top: 55%;
+                transform: translateY(-50%);
+                width: 40rem;
+                z-index: 1;
+
+                @media ($media_xl) {
+                    right: 10rem;
+                }
+
+                @media ($media_sm) {
+                    width: 80%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        &-text {
+            position: relative;
+            z-index: 1;
+            padding-top: 12rem;
+
+            @media ($media_sm) {
+                height: 88vh;
+                display: flex;
+                flex-direction: column;
+                padding-top: 6rem;
+            }
+
+            h1, h2 {
+                font-weight: 800;
+            }
+
+            h1 {
+                font-size: 4.2rem;
+                margin-bottom: 2rem;
+
+                @media ($media_sm) {
+                    font-size: 2.7rem;
+                    text-align: center;
+                }
+            }
+
+            h2 {
+                font-size: 3rem;
+                text-transform: uppercase;
+
+                @media ($media_sm) {
+                    font-size: 1.5rem;
+                    margin-top: auto;
+                }
+            }
+        }
+
+        &-number {
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+            padding-bottom: 3rem;
+
+            @media ($media_sm) {
+                padding-bottom: 1rem;
+            }
+
+            img {
+                width: 4.2rem;
+
+                @media ($media_sm) {
+                    width: 2rem;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 3rem;
+                font-weight: 800;
+                margin-left: 2rem;
+
+                @media ($media_sm) {
+                    font-size: 1.7rem;
+
+                }
+            }
+        }
+    }
+    
+}
+
+// === / payments ===
+
+// === wish ===
+
+.section-wish {
+
+    .section-inner {
+    
+    }
+    
+    .wish {
+        padding-top: 6rem;
+
+        &-header {
+            text-align: center;
+
+            h3 {
+                font-size: 1.7rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                line-height: 1.6;
+
+                @media ($media_sm) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        &-container {
+            margin-top: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media ($media_sm) {
+                flex-direction: column;
+            }
+
+            &-left {
+                flex-basis: 48%;
+
+                &-header {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+
+                    h4 {
+                        font-size: 1.7rem;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        line-height: 1.6;
+
+                        @media ($media_sm) {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                &-types {
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.08);
+                    border-radius: 2.2rem;
+                    text-align: center;
+
+                    p {
+                        font-weight: bold;
+                        font-size: 1.1rem;
+                        padding: 1rem;
+                        color: #000;
+                    }
+                }
+
+                &-summary {
+                    background-color: #E3EFFF;
+                    box-shadow: 0px 4px 4px #E3EFFF;
+                    border-radius: 2.2rem;
+                    text-align: center;
+
+                    p {
+                        font-weight: 700;
+                        font-size: 1.1rem;
+                        padding: 1.4rem;
+                        color: #000;
+                    }
+                }
+
+                &-cards {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 1.5rem 0;
+
+                    @media ($media_sm) {
+                        flex-direction: column;
+
+                        .cardPayment {
+
+                            &:not(:last-child) {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &-right {
+                flex-basis: 48%;
+
+                &-img {
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                &-cost {
+                    text-align: center;
+
+                    p {
+                        font-size: 1.7rem;
+                        font-weight: 800;
+                    }
+                }
+
+                &-content {
+                    text-align: center;
+                    margin-top: 2rem;
+
+                    p {
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// === / wish ===
+
+// === passive ===
+
+.section-passive {
+    margin: 6.25rem 0;
+
+    .section-inner {
+    
+    }
+    
+    .passive {
+        
+        &-card {
+            padding: 4.2rem;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.08);
+            border-radius: 6.25rem;
+            text-align: center;
+            font-size: 1.9rem;
+            
+            @media ($media_sm) {
+                padding: 1.5rem;
+                border-radius: 3rem;
+            }
+
+            &-title {
+                h2 {
+                    font-size: 1.9rem;
+                    font-weight: 800;
+
+                    @media ($media_sm) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            &-time {
+                p {
+                    font-size: 1.7rem;
+
+                    @media ($media_sm) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: bold;
+                font-size: 1.7rem;
+                margin: 2rem 0;
+                line-height: 1.7;
+
+                @media ($media_sm) {
+                    font-size: 1.2rem;
+                }
+
+                li {
+                    background: linear-gradient(90.01deg, #FC3EFF 0.01%, #4859FF 93.65%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    position: relative;
+                    padding-left: 1rem;
+
+                    &::before {
+                        position: absolute;
+                        top: 1.2rem;
+                        left: 0;
+                        content: "";
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        background: linear-gradient(360deg,#fc3eff 18.01%,#c937c4 93.65%);
+
+                        @media ($media_sm) {
+                            top: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// === / passive ===
