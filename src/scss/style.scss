@@ -152,7 +152,8 @@
             }
 
             @media ($media_xs) {
-                min-height: 100vh;
+                min-height: 45vh;
+                transform: translateY(65%);
                 left: 0;
                 top: 0;
                 width: 100%;
@@ -359,10 +360,23 @@
 
                 &-button {
                     text-align: center;
+                    display: flex;
+                    justify-content: center;
                     
                     button {
                         padding: 1rem 1.8rem;
                         font-weight: bold;
+                    }
+
+                    a {
+
+                        &:not(:last-child) {
+                            margin-right: 1rem;
+                        }
+
+                        img {
+                            max-width: 9rem;
+                        }
                     }
                 }
 
@@ -858,11 +872,15 @@
                 z-index: 1;
 
                 @media ($media_xl) {
+                    width: 38rem;
+                }
+
+                @media ($media_xl) {
                     right: 10rem;
                 }
 
                 @media ($media_sm) {
-                    width: 80%;
+                    width: 75%;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
@@ -890,6 +908,10 @@
                 font-size: 4.2rem;
                 margin-bottom: 2rem;
 
+                @media ($media_xl) {
+                    font-size: 3.4rem;
+                }
+
                 @media ($media_sm) {
                     font-size: 2.7rem;
                     text-align: center;
@@ -899,6 +921,10 @@
             h2 {
                 font-size: 3rem;
                 text-transform: uppercase;
+
+                @media ($media_xl) {
+                    font-size: 2.5rem;
+                }
 
                 @media ($media_sm) {
                     font-size: 1.5rem;
@@ -920,6 +946,10 @@
             img {
                 width: 4.2rem;
 
+                @media ($media_xl) {
+                    width: 3.8rem;
+                }
+
                 @media ($media_sm) {
                     width: 2rem;
                 }
@@ -930,6 +960,10 @@
                 font-size: 3rem;
                 font-weight: 800;
                 margin-left: 2rem;
+
+                @media ($media_xl) {
+                    font-size: 2.7rem;
+                }
 
                 @media ($media_sm) {
                     font-size: 1.7rem;
@@ -1085,7 +1119,7 @@
 // === passive ===
 
 .section-passive {
-    margin: 6.25rem 0;
+    margin: 5rem 0;
 
     .section-inner {
     
@@ -1169,3 +1203,44 @@
 }
 
 // === / passive ===
+
+// === recall ===
+
+.section-recall {
+
+    .section-inner {
+    
+    }
+    
+    .recall {
+        margin-bottom: 4rem;
+
+        &-header {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            h3 {
+                font-size: 1.7rem;
+                font-weight: 800;
+                text-transform: uppercase;
+
+                @media ($media_sm) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        &-button {
+            text-align: center;
+
+            .btn_primary {
+                display: inline-block;
+                text-decoration: none;
+                padding: 1rem 3rem;
+            }
+        }
+    }
+    
+}
+
+// === / recall ===

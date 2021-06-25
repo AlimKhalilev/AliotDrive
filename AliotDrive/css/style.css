@@ -2581,11 +2581,25 @@ body {
 
 .section-start .start-content-preview-button {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-start .start-content-preview-button button {
   padding: 1rem 1.8rem;
   font-weight: bold;
+}
+
+.section-start .start-content-preview-button a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.section-start .start-content-preview-button a img {
+  max-width: 9rem;
 }
 
 .section-start .start-content-steps {
@@ -3142,7 +3156,7 @@ body {
 }
 
 .section-passive {
-  margin: 6.25rem 0;
+  margin: 5rem 0;
 }
 
 .section-passive .passive-card {
@@ -3204,6 +3218,31 @@ body {
   background: linear-gradient(360deg, #fc3eff 18.01%, #c937c4 93.65%);
 }
 
+.section-recall .recall {
+  margin-bottom: 4rem;
+}
+
+.section-recall .recall-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-recall .recall-header h3 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-recall .recall-button {
+  text-align: center;
+}
+
+.section-recall .recall-button .btn_primary {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+
 @media (max-width: 1550px) {
   .section-inner {
     max-width: 1050px;
@@ -3215,11 +3254,31 @@ body {
   }
 
   .section-payments .payments-img img {
+    width: 38rem;
+  }
+
+  .section-payments .payments-img img {
     right: 10rem;
+  }
+
+  .section-payments .payments-text h1 {
+    font-size: 3.4rem;
+  }
+
+  .section-payments .payments-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-payments .payments-number img {
+    width: 3.8rem;
+  }
+
+  .section-payments .payments-number a {
+    font-size: 2.7rem;
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1275px) {
   .section-inner {
     max-width: 750px;
   }
@@ -3511,7 +3570,7 @@ body {
   }
 
   .section-payments .payments-img img {
-    width: 80%;
+    width: 75%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -3598,6 +3657,10 @@ body {
 
   .section-passive .passive-card-list li::before {
     top: 0.8rem;
+  }
+
+  .section-recall .recall-header h3 {
+    font-size: 1.4rem;
   }
 }
 
@@ -3728,7 +3791,10 @@ body {
   }
 
   .section-main .main-img {
-    min-height: 100vh;
+    min-height: 45vh;
+    -webkit-transform: translateY(65%);
+        -ms-transform: translateY(65%);
+            transform: translateY(65%);
     left: 0;
     top: 0;
     width: 100%;
